@@ -1,0 +1,59 @@
+<div class="dashboard-table-container" data-ng-controller="employerDashboardController">
+    <div class="content-container">
+        <div data-ng-if="!isApplications">
+            <div class="col-xs-12 table-container" data-ng-controller="tableController">
+                <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Need some help search here?" ng-model="search">
+                </div>
+                <div class="table-holder">
+                    <div data-ng-include="'views/table/table.html'"></div>
+                </div>
+            </div>
+        </div>
+        <div data-ng-if="isApplications" class="hidden-xs">
+            <div data-ng-controller="tableController">
+                <div class="col-xs-4 filter-pane">
+                    <h4 class="text-center">FILTER TYPE</h4>
+                    <div class="range-slider">
+                        <h5>Passed out year</h5>
+                        <div range-slider min="slider.min" max="slider.max" model-min="slider.modelMin" model-max="slider.modelMax" step="slider.stepSize" decimal-places="slider.decimalPlaces" attach-handle-values="true" show-values="true" on-handle-up="fnHandleUp(slider)"></div>
+                    </div>
+                    <div class="departments">
+                        <h5>Departments</h5>
+                        <span class="branch-filter-container inline-block pointer" data-ng-repeat="(branch, branchObject) in branchList track by $index" data-ng-click="filterDepartment(branchObject)">
+                            <div class="branch-filter-content inline-block" data-ng-class="{'branch-filter-container-isChecked': branchObject.isChecked}" data-ng-bind="branchObject.type"></div>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-8 table-container">
+                    <div class="form-group">
+                        <input class="form-control input-lg" type="text" placeholder="Need some help search here?" ng-model="search">
+                        <span class="signin-container inline-block pointer">
+                            <div class="add-job inline-block" data-ng-click="addJob(); resetAddJobForm()">Add Job</div>
+                        </span>
+                    </div>
+                    <div class="table-holder">
+                        <div data-ng-include="'views/table/table.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-ng-if="isApplications">
+            <div class="col-xs-12 table-container visible-xs" data-ng-controller="tableController">
+                <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Need some help search here?" ng-model="search">
+                </div>
+                <div class="table-holder">
+                    <div data-ng-include="'views/table/table.html'"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination-container text-center" data-ng-if="dataList.length>0">
+            <uib-pagination total-items="totalItems" ng-model="currentPage" items-per-page="itemsPerPage" class="pagination-sm"></uib-pagination>
+        </div>
+        <div class="text-center" data-ng-if="dataList.length === 0">No Records Found</div>
+    </div>
+    <md-sidenav class="sidenav-container md-sidenav-right md-whiteframe-4dp" md-component-id="addJob">
+        <div data-ng-include="'views/slider/addJobSlider.html'"></div>
+    </md-sidenav>
+</div>

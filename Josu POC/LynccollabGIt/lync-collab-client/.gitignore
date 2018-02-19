@@ -1,0 +1,7 @@
+/node_modules
+/dist
+/.tmp
+/.sass-cache
+/bower_components
+test/coverage/Chrome 56.0.2924 (Windows 10 0.0.0)/lcov-report/scripts/controllers/college/collegeTableController.js.html
+test/coverage/Chrome 56.0.2924 (Windows 10 0.0.0)/lcov-report/configurations/table-headers.js.html

@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-md-8  padding0px">
+        <table-directive data="users.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage)) | filter:search | rangeFilter:slider | limitTo:itemsPerPage"></table-directive>
+        <uib-pagination total-items="totalItems" ng-model="currentPage" items-per-page="itemsPerPage"></uib-pagination>
+    </div>
+    <div class="col-md-4  border">
+        <div class="row bgcolor">
+            <div class="col-md-12">
+                <h3>ADD FILTER</h3>
+            </div>
+        </div>
+        <div class="email">
+            <label>Email Id</label>
+            <input type="text" name="email" ng-model="search.email"></input>
+        </div>
+        <div class="name">
+            <label>Name</label>
+            <input type="text" name="firstname" ng-model="search.Name"></input>
+        </div>
+        <div class="id">
+            <label>Id</label>
+            <div range-slider min="slider.min" max="slider.max" model-min="slider.modelMin" model-max="slider.modelMax" step="slider.stepSize" decimal-places="slider.decimalPlaces" attach-handle-values="true" show-values="true" on-handle-up="fnHandleUp(slider)"></div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 border">
+        <h3 class="text-center">Form</h3>
+        <br>
+        <div data-ng-include="'views/form/formBuilder.html'"></div>
+    </div>
+</div>

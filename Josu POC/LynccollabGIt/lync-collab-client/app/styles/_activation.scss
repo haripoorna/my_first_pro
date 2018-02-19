@@ -1,0 +1,32 @@
+.activation-page {
+    height: 100%;
+    width: 100%;
+    background-color: $black;
+    position: absolute;
+    opacity: 0.1;
+}
+
+.activation-content-container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    .activation-content {
+        z-index: 10;
+        width: 650px;
+        align-self: center;
+        border-radius: 8px;
+        background-color: #fcfcfc;
+        box-shadow: 0 4px 1px 0 #dcdcdc;
+        .modal-title {
+            padding: 30px 0px;
+        }
+        .form-container {
+            .form-validator {
+                .button-container {
+                    margin-right: 250px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

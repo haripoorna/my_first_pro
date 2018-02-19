@@ -1,0 +1,151 @@
+.employer-content-container {
+    .employer-banner {
+        background: url("../images/banner.png") no-repeat center center fixed;
+        height: 300px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        .banner-content-container {
+            height: 100%;
+            .banner-content {
+                top: 35%;
+                font-size: 48px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.13;
+                letter-spacing: normal;
+                text-align: center;
+                color: $white;
+            }
+            .banner-logo-container {
+                top: 37%;
+            }
+        }
+        .data-container {
+            .data-section-one {
+                font-size: 32px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.38;
+                letter-spacing: 0.2px;
+                color: #333333;
+                padding-top: 100px;
+            }
+        }
+    }
+}
+
+.employer-table {
+    box-shadow: 0 3px 3px 0 rgba(70, 141, 142, 0.73);
+    width: 80%;
+    margin: auto;
+    .employer-table-content {
+        background-color: #fff;
+        font-family: "Roboto";
+        font-size: 15px;
+        letter-spacing: normal;
+        color: black;
+        margin-top: -48px;
+        md-tabs-wrapper {
+            margin: 14px;
+        }
+        md-tab-data {
+            opacity: 1;
+            right: 0;
+            left: initial;
+            z-index: 20;
+        }
+        .empTable-container {
+            cursor: pointer;
+            width: 97px;
+            height: 37px;
+            border-radius: 100px;
+            border: solid 1px black;
+            margin-top: 5px;
+            margin-right: 23px;
+            .text-binder {
+                font-size: 13px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: center;
+                padding: 13px 19px;
+            }
+            .text-binder:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.table-container {
+    background-color: #fff !important;
+    .table-content tr:nth-child(2) {
+        border-top: 1px solid;
+    }
+    .table-content th,
+    td {
+        border-top: none !important;
+        text-align: center !important;
+    }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1100px) {
+    .employer-content-container {
+        .employer-banner {
+            .banner-content-container {
+                .banner-content {}
+                .banner-logo-container {
+                    top: 43%;
+                    .banner-logo {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 852px) and (max-width: 990px) {
+    .employer-content-container {
+        .employer-banner {
+            height: 420px;
+            .banner-content-container {
+                .banner-content {
+                    font-size: 40px;
+                }
+                .banner-logo-container {
+                    top: 38%;
+                    .banner-logo {
+                        width: 122%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 852px) {
+    .employer-content-container {
+        .employer-banner {
+            height: 350px;
+            .banner-content-container {
+                .banner-content {
+                    top: 33%;
+                    font-size: 40px;
+                }
+                .banner-logo-container {
+                    top: 38%;
+                    .banner-logo {
+                        width: 102%;
+                    }
+                }
+            }
+        }
+    }
+}

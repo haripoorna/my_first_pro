@@ -1,0 +1,93 @@
+.home-content-container {
+    .home-banner {
+        background: url("../images/banner.png") no-repeat center center fixed;
+        height: 500px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        .banner-content-container {
+            height: 100%;
+            .banner-content {
+                top: 35%;
+                font-size: 48px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.13;
+                letter-spacing: normal;
+                text-align: left;
+                color: $white;
+            }
+            .banner-logo-container {
+                top: 37%;
+            }
+        }
+        .data-container {
+        	.data-section-one {
+        		font-size: 32px;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.38;
+				letter-spacing: 0.2px;
+				color: #333333;
+				padding-top: 100px;
+        	}
+        }
+    }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1100px) {
+    .home-content-container {
+        .home-banner {
+            .banner-content-container {
+                .banner-content {}
+                .banner-logo-container {
+                    top: 43%;
+                    .banner-logo {
+                    	width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 852px) and (max-width: 990px) {
+    .home-content-container {
+        .home-banner {
+        	height: 420px;
+            .banner-content-container {
+                .banner-content {
+                    font-size: 40px;
+                }
+                .banner-logo-container {
+                    top: 38%;
+                    .banner-logo {
+                    	width: 122%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 852px) {
+    .home-content-container {
+        .home-banner {
+        	height: 350px;
+            .banner-content-container {
+                .banner-content {
+                	top: 33%;
+                    font-size: 40px;
+                }
+                .banner-logo-container {
+                    top: 38%;
+                    .banner-logo {
+                    	width: 102%;
+                    }
+                }
+            }
+        }
+    }
+}

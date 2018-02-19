@@ -1,0 +1,32 @@
+<div data-ng-controller="loginController" layout="column" style="height:500px;" ng-cloak>
+    <section class="slider" layout="row" flex>
+        <md-content flex layout-padding>
+            <div layout="column" layout-align="top center">
+                <md-button data-ng-click="toggleRight()" ng-hide="isOpenRight()" class="md-primary">
+                    Toggle right
+                </md-button>
+            </div>
+            <div flex></div>
+        </md-content>
+        <md-sidenav class="sidenav-container md-sidenav-right md-whiteframe-4dp" md-component-id="right">
+            <div class="sidenav-header">
+                <div class="toggle-container">
+                    <fieldset>
+                        <div class="switch-toggle switch-candy">
+                            <input id="week" name="view" type="radio" checked>
+                            <label for="week" data-ng-click="">login</label>
+                            <input id="month" name="view" type="radio">
+                            <label for="month" data-ng-click="">Sign-up</label>
+                            <a></a>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="pull-right">
+                    <span class="close-login fa fa-times pull-right" data-ng-click="close()"></span>
+                </div>
+            </div>
+            <md-content layout-padding class="sidenav-body">
+            </md-content>
+        </md-sidenav>
+    </section>
+</div>

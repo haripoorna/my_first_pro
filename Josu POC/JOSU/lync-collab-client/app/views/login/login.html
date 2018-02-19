@@ -1,0 +1,21 @@
+<div class="full-page blur-image"></div>
+<div class="full-page login-page">
+    <div class="login-content-container parent-container">
+        <div class="login-content child-container">
+        	<span class="close-login fa fa-times pull-right" data-ng-click="goToHome()"></span>
+            <div class="modal-title row text-center" data-ng-bind="loginText"></div>
+            <div class="login-image-container col-xs-4 text-center" data-ng-repeat="(selectedRole, selection) in loginSelectors" data-ng-if="(!isRoleSelected) || (isRoleSelected && loginText===selection.loginText)">
+                <img src="{{selection.image}}" alt="Logo" class="logo-binder" />
+                <div class="button-container {{selection.cssClass}}" data-ng-click="displayLogin(selection, selectedRole)" data-ng-if="!isRoleSelected">
+                    <div class="role-binder" data-ng-bind="selectedRole"></div>
+                </div>
+            </div>
+            <div class="col-xs-8 login-form-container bounce" data-ng-if="isRoleSelected && isDataLoaded">
+                <div data-ng-include="'views/form/login-form.html'"></div>
+            </div>
+            <div class="col-xs-8 text-center form-loader" data-ng-if="isRoleSelected && !isDataLoaded">
+                <img src="images/loader.gif" alt="loader" class="loader-binder" />
+            </div>
+        </div>
+    </div>
+</div>

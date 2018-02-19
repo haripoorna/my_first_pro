@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-rangeslider/angular.rangeSlider.css" />
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/roboto-fontface/css/roboto-fontface.css" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="lib/styles/bootstrap.min.css">
+    <!-- endbuild -->
+</head>
+
+<body ng-app="lyncSchoolApp" session-timeout idle-time="30" set-warning="5">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div ui-view=""></div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+    ! function(A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+                (A[l].q = A[l].q || []).push(arguments)
+            }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+    </script>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.js"></script>
+    <script src="bower_components/angular-rangeslider/angular.rangeSlider.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <!-- library -->
+    <!-- endlibrary -->
+    <script src="scripts/app.js"></script>
+    <!-- configurations -->
+    <script src="configurations/activation.js"></script>
+    <script src="configurations/constants.js"></script>
+    <script src="configurations/requestAndResponse.js"></script>
+    <script src="configurations/home-page-Configurations.js"></script>
+    <script src="configurations/formStudent.js"></script>
+    <script src="configurations/formCollege.js"></script>
+    <script src="configurations/formEmployer.js"></script>
+    <script src="configurations/addJob.js"></script>
+    <!-- end of configurations -->
+    <!-- directives injection -->
+    <script src="scripts/directives/sessionTimeout-directive.js"></script>
+    <script src="scripts/directives/table-directive.js"></script>
+    <!-- end of directives -->
+    <!-- filters injection -->
+    <script src="scripts/filters/truncate-filter.js"></script>
+    <!-- end of filters -->
+    <!-- services injection -->
+    <script src="scripts/services/request-service.js"></script>
+    <script src="scripts/services/dashboard-state.js"></script>
+    <!-- end of services -->
+    <!-- controllers injection -->
+    <script src="scripts/controllers/home/home-controller.js"></script>
+    <script src="scripts/controllers/beforeLogin/before-login-header-controller.js"></script>
+    <script src="scripts/controllers/login/login-controller.js"></script>
+    <script src="scripts/controllers/login/forgotPassword-controller.js"></script>
+    <script src="scripts/controllers/login/registration-controller.js"></script>
+    <script src="scripts/controllers/login/accountLocked-controller.js"></script>
+    <script src="scripts/controllers/login/activation-controller.js"></script>
+    <script src="scripts/controllers/afterLogin/after-login-header-controller.js"></script>
+    <script src="scripts/controllers/dashboard/dashboard-controller.js"></script>
+    <script src="scripts/controllers/dashboard/student/studentDashboard-controller.js"></script>
+    <script src="scripts/controllers/dashboard/student/editStudentInfo-controller.js"></script>
+    <script src="scripts/controllers/dashboard/college/collegeDashboard-controller.js"></script>
+    <script src="scripts/controllers/dashboard/college/editCollegeInfo-controller.js"></script>
+    <script src="scripts/controllers/dashboard/employer/employerDashboard-controller.js"></script>
+    <script src="scripts/controllers/dashboard/employer/editEmployerInfo-controller.js"></script>
+    <!-- end of controllers -->
+    <!-- endbuild -->
+</body>
+
+</html>

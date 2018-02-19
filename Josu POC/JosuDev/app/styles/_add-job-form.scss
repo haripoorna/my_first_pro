@@ -1,0 +1,72 @@
+.dashboard-slider-container {
+    .slider-header {
+        .close-button {
+            font-size: 11px;
+            float: right;
+            border-radius: 100%;
+            color: #CFCFCF;
+            border: 1px solid #CFCFCF;
+            padding: 9px;
+            margin-right: 17px;
+        }
+        p {
+            font-size: 17px;
+            text-align: center;
+        }
+    }
+    .slider-body {
+        height: calc(100% - 100px);
+        md-content {
+            background-color: $seaShell !important;
+        }
+        .slider-content {
+            color: $lightBlack;
+            text-align: center;
+            p {
+                font-size: 18px;
+            }
+        }
+        .login-form-container {
+            .form-validator {
+                .form-validator-group {
+                    margin-bottom: -10px;
+                    .form-field-container {
+                        .material-input-container {
+                            margin: 15px 23px !important;
+                            .control-label {
+                                text-align: left;
+                            }
+                            .form-control {
+                                width: 100%;
+                            }
+                        }
+                        .material-select-container {
+                            margin: 12px 25px 23px !important;
+                            .control-label {
+                                text-align: left;
+                            }
+                            .form-control {
+                                width: 100%;
+                            }
+                        }
+                        .half-width {
+                            width: 127px;
+                        }
+                        .full-width {
+                            width: 300px;
+                        }
+                    }
+                }
+                .button-container {
+                    color: $white;
+                    font-size: 15px;
+                    background-image: linear-gradient(to bottom, #3dbdb6, #0089ce);
+                    border: none;
+                    .role-binder {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

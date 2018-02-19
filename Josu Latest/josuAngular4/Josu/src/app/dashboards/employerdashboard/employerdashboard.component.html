@@ -1,0 +1,54 @@
+<md-sidenav-container class="example-container ">
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="../assets/images/logo.png"/>
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a >HOME</a></li>
+         <li><a >ABOUT US</a></li>
+          <li><a >CONTACT US</a></li>
+           <li><button class="btn btn-primary " (click)="logout()" >LOGOUT</button></li>
+     </ul>
+    </div>
+  </div>
+</nav>
+<div class="navitem">
+<div class="radio-group">
+<input type="radio"  id="option-one"  [routerLink]="['Applications']"  name="selector" checked><label  for="option-one">APPLICATIONS</label>
+<input type="radio" id="option-three"  [routerLink]="['Studentlist']"  name="selector"><label  for="option-three">STUDENT-LIST</label>
+<input type="radio" id="option-four"  [routerLink]="['Collegelist']"  name="selector"><label  for="option-four">COLLEGE-LIST</label>
+  </div>
+  <div class="first">
+   
+  <img src="assets/images/profilePic-employer.png" class="second" (click)="sidenavright.open()">
+  <h3 class="third">{{user.userName}}</h3>
+    <span class="fourth">Employer</span>
+  </div>
+</div>
+    
+    
+
+<md-sidenav align="end" #sidenavright  class="example-sidenav">
+    <button md-button class="closebutton" (click)="sidenavright.close()">&times;</button>
+  <app-employereditprofile></app-employereditprofile>
+
+  </md-sidenav>  
+ 
+   <router-outlet></router-outlet>
+
+</md-sidenav-container>
+
+ 

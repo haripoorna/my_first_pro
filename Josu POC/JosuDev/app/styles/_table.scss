@@ -1,0 +1,232 @@
+.dashboard-table-container {
+    padding-left: 5%;
+    .content-container {
+        padding: 25px;
+        width: 90%;
+        position: absolute;
+        background-color: #fff;
+        .filter-pane {
+            h4 {
+                color: $theme;
+            }
+            .range-slider {}
+            .departments {
+                .branch-filter-container {
+                    border-radius: 4px;
+                    background-color: #ffffff;
+                    border: solid 1px #9b9b9b;
+                    color: $theme;
+                    margin: 10px;
+                    .branch-filter-content {
+                        padding: 4px 17px;
+                        font-size: 16px;
+                    }
+                    .branch-filter-container-isChecked {
+                        border-radius: 4px;
+                        background-color: $theme;
+                        color: $white;
+                        border: 1px solid $theme;
+                    }
+                }
+            }
+        }
+        .table-container {}
+        .table-holder {
+            overflow-x: auto;
+            max-width: 100%;
+        }
+    }
+}
+
+.status-button-container {
+    border-radius: 4px;
+    background-color: $theme;
+    color: $white;
+    .status {
+        padding: 4px 17px;
+        font-size: 12px;
+    }
+}
+
+.info {
+    color: #2fa1da;
+    border: 1px solid #2fa1da;
+    padding: 5px 8px;
+    border-radius: 100%;
+    font-size: 10px;
+}
+
+.table-container {
+    text-align: center;
+    thead>tr>th {
+        text-align: center;
+    }
+    thead {
+        background-color: #f6f9fa;
+    }
+    .table {
+        text-transform: capitalize;
+    }
+    .add-job {
+        padding: 12px 17px;
+        font-size: 16px;
+        color: $white;
+    }
+    .form-group {
+        .form-control {
+            font-size: 14px;
+            display: inline-block !important;
+            width: 73% !important;
+            margin-right: 20px;
+        }
+        .share-icon {
+            font-size: 20px;
+            padding: 12px;
+            border: 1px solid #CCC;
+            border-radius: 50%;
+        }
+        .share-icon-pointer {
+            background-color: #30a1da;
+            color: $white;
+            border: 1px solid #30a1da;
+            cursor: pointer;
+        }
+        .share-icon-disabled {
+            cursor: not-allowed;
+        }
+    }
+    .application-container {
+        padding: 20px;
+        font-size: 20px;
+        text-transform: capitalize;
+        .application-content-container {
+            height: 250px;
+            padding: 20px;
+            text-align: left;
+            border: 1px solid #CCC;
+            border-radius: 8px;
+            min-height: 240px;
+            overflow-y: auto;
+            .application-title {
+                font-weight: bold;
+                color: $darkGray;
+            }
+            .application-value-title {
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 0.91;
+                color: $theme;
+                padding: 2px 0px 5px 0px;
+            }
+            .skill-values {
+                height: 100px;
+                overflow-y: auto;
+                .application-value {
+                    margin-left: 40px;
+                    display: list-item;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #9b9b9b;
+                }
+            }
+            .info-check {
+                display: block;
+                position: absolute;
+                bottom: 24px;
+                right: 29px;
+            }
+            .info-selected {
+                color: #30a1da;
+            }
+        }
+        .application-selected {
+            background-color: $theme;
+            opacity: 0.8;
+            .application-title {
+                opacity: 0.5;
+            }
+            .application-value-title {
+                opacity: 0.5;
+                color: $white;
+            }
+            .application-value {
+                opacity: 0.5;
+                color: $white;
+            }
+            .info-check {
+                opacity: 0.5;
+            }
+            .info-selected {
+                color: $white;
+            }
+        }
+    }
+}
+
+.college-select-container {
+    padding: 55px 20px 0px 0px;
+    .share-title {
+        font-size: 28px;
+        left: 103px;
+        position: absolute;
+        top: 15px;
+    }
+    .share-header {
+        padding: 40px 20px 40px 40px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .share-search {
+        margin-left: 22px;
+        width: 360px;
+    }
+    .colleges-container {
+        padding-left: 22px;
+        overflow-y: auto;
+        max-height: 375px;
+        .college-content {
+            font-size: 18px;
+            text-align: left;
+            padding: 10px;
+            background: $white;
+        }
+        .college-checkbox {
+            vertical-align: sub;
+            font-size: 27px;
+            padding-left: 7px;
+            opacity: 0.5;
+        }
+        .checked {
+            color: #30a1da;
+            opacity: 1;
+        }
+    }
+    .submit-button-container {
+        padding-top: 20px;
+        .active-submit {
+            cursor: pointer !important;
+            border: 1px solid #30a1da;
+            background-color: #30a1da;
+            color: $white;
+        }
+    }
+    .job-description-container {
+        padding: 0px 50px;
+        text-transform: capitalize;
+        .job-description-content {
+            padding-bottom: 20px;
+            .job-description-title {
+                font-size: 12px;
+                color: $gray81;
+                padding-bottom: 5px;
+            }
+            .job-description-data {
+                font-size: 20px;
+                color: $theme;
+            }
+        }
+        .job-description-fields {
+            padding-bottom: 0px;
+        }
+    }
+}

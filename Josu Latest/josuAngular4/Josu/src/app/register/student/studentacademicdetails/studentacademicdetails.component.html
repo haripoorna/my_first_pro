@@ -1,0 +1,31 @@
+
+<h2 class="font">Academic Details</h2>
+<p class="font">Create your account in easy steps with less information.</p>
+<div  >
+  <md-select class="style3" placeholder="Branch*" [(ngModel)]="info.branch" >
+  <md-option *ngFor="let Branch of Branchs" [value]="Branch.value" >
+    {{ Branch.viewValue }}
+  </md-option>
+ 
+</md-select>
+ 
+   <md-select class="style3" placeholder="Passout*"  [(ngModel)]="info.passoutYear">
+  <md-option *ngFor="let Year of Years" [value]="Year.value">
+    {{ Year.viewValue }}
+  </md-option>
+</md-select>
+ 
+ <md-select class="style1" placeholder="College Name*"  [(ngModel)]="info.collegeName">
+  <md-option *ngFor="let College of Colleges"  [value]="College.value" >
+    {{ College.viewValue }}
+  </md-option>
+</md-select>
+ 
+  
+    <button type="button" class="btn btn-info"  (click)="student()">SIGN UP</button>
+ </div>
+ <div>{{message}}</div>
+    <div>
+<img class="image" src="../../assets/images/employer.png">
+</div>
+  

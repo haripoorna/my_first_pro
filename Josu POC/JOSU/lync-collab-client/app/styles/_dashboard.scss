@@ -1,0 +1,83 @@
+.dashboard-content-container {
+    .dashboard-banner {
+        background: url("../images/banner.png") no-repeat center center fixed;
+        height: 300px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        .banner-content-container {
+            height: 100%;
+            .banner-content {
+                top: 35%;
+                font-size: 48px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.13;
+                letter-spacing: normal;
+                color: $white;
+            }
+        }
+    }
+}
+
+.dashboard-table-container {
+    padding-left: 5%;
+    .content-container {
+        width: 90%;
+        position: absolute;
+        background-color: #fff;
+        margin-top: -40px;
+        border-radius: 10px;
+        .filters-pane {}
+        .table-container {}
+        .tab-container {
+            font-size: 16px;
+            .text-binder {
+                cursor: pointer;
+                display: inline-block;
+                padding: 15px 30px;
+                border-bottom: solid 4px $white;
+            }
+            .text-binder:hover {
+                border-bottom: solid 2px #3dbdb6;
+            }
+            .text-binder:focus {
+                outline: none;
+            }
+            .active-tab {
+                border-bottom: solid 4px #3dbdb6;
+            }
+            .button-container {
+                cursor: pointer;
+                margin-top: 14px;
+                width: 80px;
+                height: 34px;
+                border-radius: 100px;
+                border: solid 1px $black;
+                .addJobModal {
+                    cursor: pointer;
+                    font-size: 14px;
+                    display: inline-block;
+                    padding: 8px;
+                }
+                .addJobModal:focus {
+                    outline: none;
+                    border-style: none;
+                    border-color: none;
+                }
+            }
+        }
+        .table-holder {
+            overflow-x: auto;
+            max-width: 100%;
+        }
+    }
+}
+.table-container{
+    text-align:center;
+    thead>tr>th{
+        text-align:center;
+    }
+}

@@ -1,0 +1,106 @@
+md-backdrop {
+    position: fixed !important;
+}
+
+.sidenav-container {
+    width: 400px !important;
+    background-color: $seaShell;
+    position: fixed !important;
+    .silder-container {
+        .slider-header {
+            padding: 20px;
+        }
+        .slider-header-if-noToggle {
+            padding: 9px;
+        }
+        .slider-body {
+            height: calc(100% - 100px);
+            .login-container {
+                md-content {
+                    background-color: $seaShell !important;
+                }
+                .slider-content {
+                    color: $lightBlack;
+                    text-align: center;
+                    p {
+                        font-size: 18px;
+                    }
+                }
+                .login-form-container {
+                    .form-validator {
+                        .form-validator-group {
+                            margin-bottom: -10px;
+                            .form-field-container {
+                                .material-input-container {
+                                    margin: 6px 0;
+                                    .control-label {
+                                        text-align: left;
+                                    }
+                                    .form-control {
+                                        width: 100%;
+                                    }
+                                }
+                                .full-width {
+                                    width: 300px;
+                                }
+                            }
+                        }
+                        .interactive-container {
+                            height: 60px;
+                            .forgot-password {
+                                cursor: pointer;
+                                color: $darkGray;
+                                font-size: 12px;
+                                text-align: center;
+                                padding: 10px 0px;
+                            }
+                            .invalid-credentails-container {
+                                height: 20px;
+                                font-size: 12px;
+                                color: $white;
+                                background-color: $darkRed;
+                                text-align: center;
+                                border-radius: 100px;
+                                padding: 3px;
+                                width: 240px;
+                                margin: auto;
+                            }
+                        }
+                        .button-container {
+                            color: $white;
+                            font-size: 15px;
+                            background-image: linear-gradient(to bottom, #3dbdb6, #0089ce);
+                            border: none;
+                            .role-binder {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .form-validator {
+        .form-validator-group {
+            .form-field-container {
+                .material-input-container {
+                    .control-label {
+                        text-align: left;
+                    }
+                }
+                .full-width {
+                    width: 220px;
+                }
+            }
+        }
+        .interactive-container {
+            height: 30px;
+            .invalid-credentails-container {
+                width: 210px;
+            }
+        }
+    }
+}

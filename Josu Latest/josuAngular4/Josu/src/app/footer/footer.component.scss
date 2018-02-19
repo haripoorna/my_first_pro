@@ -1,0 +1,39 @@
+.footer-container {
+    background-color:#1F2532;
+    padding: 60px;
+    .footer-content-container {
+        text-align: left;
+        color: #72808E;
+        a {
+            text-decoration: none;
+            color: #72808E;
+        }
+        .companyLogo {
+            width: 170px;
+        }
+        .cs-footer-links-header {
+            padding: 8px;
+            color: white;
+            font-weight: bold;
+        }
+        .cs-footer-links {
+            padding: 8px;
+            text-decoration: none;
+            color: americano;
+        }
+        .cs-footer-links:hover {
+            text-decoration: none;
+        }
+        .social-links {
+            text-align: left;
+            padding: 0px !important;
+            li {
+                padding-left: 8px;
+            }
+        }
+    }
+}
+h5.title{
+    color: white;
+    font-weight: bold
+}

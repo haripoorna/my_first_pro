@@ -1,0 +1,23 @@
+<div class="college-select-container">
+    <span class="share-title">Job Description</span>
+    <span class="close-button close-share-options fa fa-times pull-right" data-ng-click="closeInfo()"></span>
+    <div class="text-center share-header">
+        <span>Please find the account information of the selected Job.</span>
+    </div>
+    <div class="job-description-container">
+        <div class="job-description-content no-padding" data-ng-repeat="eachObject in jobInfo track by $index">
+            <div data-ng-if="eachObject.jobTitle">
+                <div class="job-description-title">Job Title</div>
+                <div class="job-description-data" data-ng-bind="eachObject.jobTitle"></div>
+            </div>
+            <div data-ng-if="eachObject.jobDesc">
+                <div class="job-description-title">Job Description</div>
+                <div class="job-description-data" data-ng-bind="eachObject.jobDesc"></div>
+            </div>
+            <div data-ng-if="eachObject.skills">
+            	<div class="job-description-title">Skills</div>
+                <div class="job-description-data" data-ng-repeat="eachSkill in eachObject.skills" data-ng-bind="eachSkill"></div>
+            </div>
+        </div>
+    </div>
+</div>

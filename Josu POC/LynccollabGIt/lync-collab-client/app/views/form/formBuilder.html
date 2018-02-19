@@ -1,0 +1,19 @@
+<form name="formValidator" class="registration-form-validator" novalidate="novalidate" autocomplete="off" data-ng-repeat="(formCategory, formData) in registrationFormBuildInfo" data-ng-if="formData.isSelected">
+    <div class="form-group form-validator-group" data-ng-repeat="(formKey,formField) in formData.formInfo" float-label field-model="formField.formModel">
+        <div class="form-field-container">
+            <md-input-container class="material-input-container no-padding {{formField.css}}" data-ng-class="{'col-xs-6':(formField.css==='half-width')}" data-ng-if="formField.type === 'text' || formField.type === 'email'">
+                <label class="control-label " data-ng-bind="formField.title"></label>
+                <input type="{{formField.type}}" data-ng-model="formField.formModel" name="name{{$index}}" class="form-control" data-ng-required="formField.required" data-ng-pattern="formField.pattern" ng-maxlength="formField.maxLength" ng-blur="checkAvailability(formField.isBlur)">
+                <div ng-messages="formValidator['name' + $index].$error" ng-if="formValidator['name' + $index].$touched" role="alert">
+                    <div class="error" ng-message="required" data-ng-bind="formField.validationMessage"></div>
+                    <div class="error" ng-message="pattern" data-ng-bind="formField.patternValidation"></div>
+                </div>
+            </md-input-container>
+        </div>
+    </div>
+    <div class="text-center" data-ng-if="$last">
+        <div class="button-container" data-ng-class="{'inactive-button-container':!formValidator.$valid}">
+            <div class="text-binder" data-ng-bind="loginSignIn" data-ng-click="register(!formValidator.$valid)"></div>
+        </div>
+    </div>
+</form>

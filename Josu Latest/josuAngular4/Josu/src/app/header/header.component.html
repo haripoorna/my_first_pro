@@ -1,0 +1,37 @@
+<md-sidenav-container class="example-container ">
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="../assets/images/logo.png"/>
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a >HOME</a></li>
+         <li><a >ABOUT US</a></li>
+          <li><a>CONTACT US</a></li>
+           <li><button class="btn btn-primary "  md-button  (click)="sidenavright.open()">SIGN IN</button></li>
+           
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <md-sidenav align="end" #sidenavright class="example-sidenav">
+    <button md-button class="closebutton" (click)="sidenavright.close()">&times;</button>
+   <app-slider></app-slider>
+  </md-sidenav>
+  
+<app-home></app-home>
+
+</md-sidenav-container>

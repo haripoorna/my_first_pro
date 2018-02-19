@@ -1,0 +1,68 @@
+.header-container {
+    height: 80px;
+    background-color: $white;
+    .content-container {
+        .logo-container {
+            .logo-binder {
+                padding: 20px;
+                width: 150px;
+            }
+        }
+        .header-controls-container {
+            margin-right: 20px;
+            .tab-container {
+                color: $black;
+                font-size: 16px;
+                .inactive-tab {
+                    padding: 29px 20px;
+                    opacity: 0.3;
+                }
+                .active-tab {
+                    opacity: 1;
+                }
+            }
+            .signin-container {
+                width: 129px;
+                height: 38px;
+                border-radius: 4px;
+                background-color: #2fa1da;
+                color: $white;
+                .signin {
+                    padding: 9px 40px;
+                }
+                .signout {
+                    padding: 7px 32px;
+                    font-size: 17px;
+                }
+            }
+            .header-menu {
+                font-size: 25px;
+                margin-top: 27px;
+            }
+        }
+    }
+    .header-dropdown {
+        padding: 10px 50px;
+        font-size: 18px;
+        position: absolute;
+        right: 1px;
+        background: $white;
+        color: $lightBlack !important;
+        border-radius: 10px;
+        z-index: 999;
+        border: 1px solid #e0eaef;
+        .drop-down-caret {
+            top: -32px;
+            position: absolute;
+            font-size: 45px;
+            right: 32px;
+            color: #ccd3d6;
+        }
+        .dropdown-tab {
+            padding: 10px 0px;
+        }
+        .signin-container {
+            font-weight: 500;
+        }
+    }
+}

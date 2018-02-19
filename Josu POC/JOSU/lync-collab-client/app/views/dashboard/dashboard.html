@@ -1,0 +1,11 @@
+<div data-ng-include="'views/afterLogin/header/header.html'"></div>
+<div class="dashboard-content-container">
+    <div class="dashboard-banner">
+        <div class="container banner-content-container">
+            <div class="banner-content col-xs-12 text-center">
+                Welcome, {{userName}}
+            </div>
+        </div>
+    </div>
+</div>
+<div data-ng-include="'views/dashboard/'+userLogged+'/'+userLogged+'Dashboard.html'"></div>

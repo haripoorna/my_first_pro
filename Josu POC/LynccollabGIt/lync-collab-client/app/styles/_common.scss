@@ -1,0 +1,59 @@
+body,
+html {
+    font-family: 'Roboto' !important;
+    height: 100%;
+}
+
+.modal-title {
+    opacity: 0.5;
+    font-size: 40px;
+    font-weight: 300;
+}
+.modal-description{
+    padding:30px;
+    font-size:24px;
+     font-weight: 300;
+}
+.no-padding {
+    padding: 0px !important;
+}
+
+.disabled {
+    cursor: not-allowed !important;
+}
+
+.form-validator,.addJob-form-validator,
+.registration-form-validator {
+    .form-validator-group {
+        .form-field-container {
+            padding-left: 20px;
+            .material-input-container {
+                .control-label {}
+                .form-control {
+                    width: 270px;
+                    box-shadow: none;
+                }
+            }
+            .error{
+                color:red;
+            }
+        }
+    }
+    .button-container {
+        display: inline-block;
+        cursor: pointer;
+        color: $white;
+        margin-top: 30px;
+        padding: 11px 47px;
+        width: 148px;
+        height: 40px;
+        border-radius: 100px;
+        background-image: linear-gradient(to bottom, #3dbdb6, #0089ce);
+    }
+    .inactive-button-container {
+        background-image: none;
+        border: solid 1px $black;
+        cursor: not-allowed;
+        color: $black
+    }
+}

@@ -1,0 +1,23 @@
+.addJob-form-validator {
+    .form-validator-group {
+        .form-field-container {
+            .material-input-container {
+                margin-left: 16px !important;
+                margin-right: 16px !important;
+                .control-label {}
+                .form-control {
+                    width: 100%;
+                }
+            }
+            .half-width {
+                width: 250px;
+            }
+            .full-width {
+                width: 525px;
+            }
+        }
+    }
+    .button-container {
+        margin-top: 0px;
+    }
+}

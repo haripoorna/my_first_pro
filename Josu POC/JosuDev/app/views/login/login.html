@@ -1,0 +1,12 @@
+<div class="login-container" data-ng-if="!isRegistration">
+    <div class="slider-content">
+        <h2 data-ng-bind="loginHeaderInfo.heading"></h2>
+        <p data-ng-bind="loginHeaderInfo.paragraph"></p>
+    </div>
+    <md-content layout-padding class="sidenav-body login-form-container">
+        <div data-ng-include="'views/form/login-form.html'"></div>
+    </md-content>
+    <div class="login-image-container text-center">
+        <img src="{{userImages.loginImage}}" alt="login"/>
+    </div>
+</div>

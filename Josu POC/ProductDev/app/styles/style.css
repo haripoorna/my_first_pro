@@ -1,0 +1,130 @@
+body {
+    font-family: Raleway;
+}
+
+.cont {
+    margin-top: 30px
+}
+
+.padding0px {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.border {
+    border: 1px solid #171378;
+}
+
+.tableRow th,
+td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #171378;
+}
+
+.tableRow:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+.tableRow th {
+    background-color: #171378;
+    color: white;
+}
+
+.table>thead>tr>th {
+    padding: 16px !important;
+    text-align: center !important;
+}
+
+.name input {
+    margin-left: 16px;
+}
+
+.name,
+.email,
+.id {
+    padding: 8px;
+}
+
+.name,
+.email,
+.id label {
+    color: #171378 !important;
+}
+
+.bgcolor {
+    background-color: #171378 !important;
+    color: white !important;
+}
+
+.inputContainer {
+    margin: 0px !important;
+}
+
+.error {
+    color: orange;
+}
+
+.inputContainer .md-input {
+    color: rgba(0, 0, 0, 0.87);
+    border-color: #66afe9;
+}
+
+.inputContainer label {
+    color: #66afe9;
+}
+
+.inputContainer .md-default-theme.md-input-invalid .md-char-counter,
+.inputContainer .md-input-invalid .md-char-counter,
+.inputContainer .md-default-theme.md-input-invalid .md-input-message-animation,
+.inputContainer .md-input-invalid .md-input-message-animation,
+.inputContainer .md-default-theme.md-input-invalid label,
+.inputContainer.md-input-invalid label {
+    color: #66afe9;
+}
+
+.inputContainer .md-default-theme.md-input-invalid .md-input,
+.inputContainer.md-input-invalid .md-input {
+    border-color: #66afe9;
+}
+
+.inputContainer .md-default-theme:not(.md-input-invalid).md-input-focused label,
+.inputContainer:not(.md-input-invalid).md-input-focused label,
+.inputContainer.md-default-theme:not(.md-input-invalid).md-input-focused md-icon,
+.inputContainer:not(.md-input-invalid).md-input-focused md-icon {
+    color: rgb(184, 255, 51);
+}
+
+.inputContainer.md-default-theme:not(.md-input-invalid).md-input-focused .md-input,
+.inputContainer:not(.md-input-invalid).md-input-focused .md-input,
+.inputContainer.md-default-theme:not(.md-input-invalid).md-input-resized .md-input,
+.inputContainer:not(.md-input-invalid).md-input-resized .md-input {
+    border-bottom-color: rgb(184, 255, 51);
+}
+
+.inputContainer label:not(.md-container-ignore).md-required:after {
+    content: '*';
+    color: black;
+}
+
+.signUpButton {
+    background-image: linear-gradient(to bottom, #3dbdb6, #0089ce);
+    cursor: initial;
+}
+
+.text-binder {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0px 20px 5px 21px;
+}
+
+.button-container {
+    cursor: pointer;
+    width: 128px;
+    height: 41px;
+    border-radius: 100px;
+    margin-left: 28px;
+    padding-top: 8px;
+    border-style: none;
+    color: white;
+}

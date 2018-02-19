@@ -1,0 +1,26 @@
+<div class="dashboard-slider-container" data-ng-if="!jobPostedSuccessMessage">
+    <div class="slider-header">
+        <span class="text-center"><h3>ADD JOB</h3></span>
+        <span class="close-button fa fa-times" data-ng-click="close()"></span>
+        <P>Create your account in easy steps with less informaction.</P>
+    </div>
+    <div class="slider-body">
+        <md-content layout-padding class="sidenav-body login-form-container form-container">
+            <div data-ng-include="'views/form/addJob-form.html'"></div>
+        </md-content>
+    </div>
+</div>
+<div class="dashboard-slider-container" data-ng-if="jobPostedSuccessMessage">
+    <div class="slider-header">
+        <span class="text-center"><h3>ADD JOB</h3></span>
+        <span class="close-button fa fa-times" data-ng-click="close()"></span>
+    </div>
+    <div class="slider-body">
+        <div class="login-image-container text-center">
+            <img src="images/successMessage.png" alt="Logo" />
+        </div>
+        <md-content layout-padding class="sidenav-body text-center login-form-container form-container">
+            <h3 data-ng-bind="jobPostedMessage"></h3>
+        </md-content>
+    </div>
+</div>

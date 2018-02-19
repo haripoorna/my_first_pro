@@ -1,0 +1,28 @@
+<div data-ng-include="'views/header/header.html'"></div>
+<div class="dashboard-content-container">
+    <div class="dashboard-banner">
+        <div class="container banner-content-container parent-container">
+            <div class="banner-content col-xs-12 child-container">
+                <div class="toggle-container pull-left">
+                    <fieldset>
+                        <span class="switch-toggle switch-candy">
+                            <span data-ng-repeat="info in toggleInfo">
+                                <input id="{{info.id}}" name="view" type="radio">
+                                <label for="{{info.id}}" data-ng-click="fetchTableData(info.label)" data-ng-bind="info.label"></label>
+                            </span>
+                        </span>
+                    </fieldset>
+                </div>
+                <span class="pull-right profile-picture hidden-xs pointer" data-ng-click="slideEditProfile(); editProfile()"><img src="{{profilePicture}}"></span>
+                <div class="profile-text hidden-xs pull-right pointer">
+                    <div class="profile-name inline-block" data-ng-bind="userName"></div>
+                    <div class="profile-role" data-ng-bind="userLogged"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-ng-include="'views/dashboard/'+userLogged+'/'+userLogged+'Dashboard.html'"></div>
+<md-sidenav class="sidenav-container md-sidenav-right md-whiteframe-4dp" md-component-id="editProfile">
+    <div data-ng-include="'views/slider/editProfileSlider.html'"></div>
+</md-sidenav>

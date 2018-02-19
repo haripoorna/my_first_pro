@@ -1,0 +1,26 @@
+<div data-ng-include="'views/afterLogin/header/header.html'"></div>
+<div class="employer-content-container">
+    <div class="employer-banner">
+        <div class="container banner-content-container">
+            <div class="banner-content col-xs-12">
+                Welcome, College name
+            </div>
+        </div>
+    </div>
+</div>
+<div class="employer-table" data-ng-controller="collegeDashboardController">
+    <md-content class="employer-table-content">
+        <md-tabs md-dynamic-height="" md-center-tabs="true">
+            <md-tab label="Employer-List">
+                <md-content data-ng-controller="collegeTableController">
+                    <table-directive data="employerList"></table-directive>
+                </md-content>
+            </md-tab>
+            <md-tab label="Student-List" data-ng-click="headerText()">
+                <md-content data-ng-controller="collegeTableController">
+                    <table-directive data="studentList"></table-directive>
+                </md-content>
+            </md-tab>
+        </md-tabs>
+    </md-content>
+</div>

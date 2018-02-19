@@ -1,0 +1,25 @@
+<div class="silder-container" data-ng-controller="sliderController">
+    <div class="slider-header" data-ng-class="{'slider-header-if-noToggle': !isToggleButton}">
+        <div class="toggle-container">
+            <fieldset>
+                <span class="switch-toggle switch-candy" data-ng-if="isToggleButton">
+                    <input id="login" name="view" type="radio" checked>
+                    <label for="login" data-ng-click="openLogin()">LOGIN</label>
+                    <input id="signup" name="view" type="radio">
+                    <label for="signup" data-ng-click="openRegistration()">SIGNUP</label>
+                    <a></a>
+                </span>
+                <span class="close-button fa fa-times" data-ng-class="{'close-button-if-noToggle':!isToggleButton}" data-ng-click="close()"></span>
+            </fieldset>
+        </div>
+    </div>
+    <div class="slider-body">
+        <div data-ng-if="beforeLogin">
+            <div data-ng-include="'views/login/login.html'"></div>
+            <div data-ng-include="'views/login/registration.html'"></div>
+        </div>
+        <div data-ng-if="isForgotPassword">
+            <div data-ng-include="'views/login/forgotPassword.html'"></div>
+        </div>
+    </div>
+</div>

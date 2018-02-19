@@ -1,0 +1,22 @@
+<table class="table table-hover table-responsive">
+    <thead>
+        <th data-ng-repeat="column in objectKeys track by $index" data-ng-bind="column | rename"></th>
+        <th data-ng-if="isStatus">Info</th>
+    </thead>
+    <tbody>
+        <tr data-ng-repeat="tuple in dataList | filter:search | limitTo: itemsPerPage track by $index">
+            <td data-ng-repeat="column in tuple" data-ng-if='column.isPrimary'>  
+                <div data-ng-repeat="key in objectKeys">
+                    <span data-ng-bind="column[key]" data-ng-if="column[key] !== 'Sent'"></span>
+                    <div data-ng-if="column[key] === 'Sent'" class="status-button-container inline-block pointer">
+                        <div class="status inline-block" data-ng-click="confirm(tuple)" data-ng-if="column[key] === 'Sent'">Confirm</div>
+                        <div class="status inline-block" data-ng-if="column[key] !== 'Sent'">Applied</div>
+                    </div>
+                </div>
+            </td>
+            <td data-ng-if='isStatus'>
+                <span class="info fa fa-info" data-ng-click="slideInfo(); getJobInfo(tuple)"></span>
+            </td>
+        </tr>
+    </tbody>
+</table>

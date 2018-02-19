@@ -1,0 +1,19 @@
+<div class="full-page blur-image"></div>
+<div class="full-page login-page">
+    <div class="login-content-container parent-container">
+        <div class="login-content child-container">
+            <span class="close-login fa fa-times pull-right" data-ng-click="goToHome()"></span>
+            <div class="login-image-container text-center">
+                <img src="{{selectedRoleObject.image}}" alt="Logo" class="logo-binder" />
+            </div>
+            <div class="navigation-container text-center">
+                <span class="navigator fa fa-angle-left pull-left" data-ng-class="{'disabled':disableLeftNavigation}" data-ng-click="navigateRegistration(!disableLeftNavigation, false)"></span>
+                <span class="navigation-header" data-ng-bind="formHeader"></span>
+                <span class="navigator fa fa-angle-right pull-right" data-ng-class="{'disabled':disableRightNavigation}" data-ng-click="navigateRegistration(!disableRightNavigation, true)"></span>
+            </div>
+            <div class="form-container">
+                <div data-ng-include="'views/form/formBuilder.html'"></div>
+            </div>
+        </div>
+    </div>
+</div>

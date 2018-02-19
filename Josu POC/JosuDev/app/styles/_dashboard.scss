@@ -1,0 +1,138 @@
+.dashboard-content-container {
+    .dashboard-banner {
+        background-color: #2fa1da;
+        height: 80px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        .banner-content-container {
+            height: 100%;
+            .banner-content {
+                font-size: 18px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.13;
+                letter-spacing: normal;
+                color: $white;
+                .toggle-container {
+                    padding: 10px;
+                    .switch-toggle.switch-candy,
+                    .switch-light.switch-candy > span {
+                        background-color: transparent;
+                        border-radius: 100px;
+                        width: 100%;
+                        border: solid 1px $white !important;
+                        box-shadow: none;
+                        margin: auto;
+                    }
+                    .switch-toggle {
+                        position: relative;
+                        display: block;
+                        padding: 0px !important;
+                    }
+                    .switch-light.switch-candy span span,
+                    .switch-light.switch-candy input:checked ~ span span:first-child,
+                    .switch-toggle.switch-candy label {
+                        color: $white;
+                        font-size: 13px;
+                        padding: 5px 20px;
+                        text-align: center;
+                        text-shadow: unset;
+                    }
+                    .switch-light.switch-candy input ~ span span:first-child,
+                    .switch-light.switch-candy input:checked ~ span span:nth-child(2),
+                    .switch-candy input:checked + label {
+                        color: #2fa1da;
+                        outline: none;
+                        text-shadow: unset;
+                        background-color: white;
+                        border-radius: 100px;
+                        display: block;
+                        -webkit-transition: all 0.2s ease-out;
+                        -moz-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-in-out
+                    }
+                    .switch-candy a {
+                        border: none;
+                        border-radius: 100px;
+                        background-color: #2fa1da;
+                    }
+                    .switch-candy-blue a {
+                        background-color: #38a3d4;
+                    }
+                    .switch-candy-yellow a {
+                        background-color: #f5e560;
+                    }
+                }
+                .profile-text {
+                    padding-right: 10px;
+                    font-size: 22px;
+                    text-transform: capitalize;
+                    .profile-role {
+                        text-align: right;
+                        font-size: 14px;
+                    }
+                    .profile-name {
+                        padding-top: 12px;
+                    }
+                }
+                .profile-picture {
+                    img {
+                        height: 59px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.signin-container {
+    width: 100px;
+    height: 46px;
+    border-radius: 4px;
+    background-color: #2fa1da;
+    .add-job {
+        padding: 9px 0px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    .dashboard-content-container {
+        .dashboard-banner {
+            background-size: cover;
+            .banner-content-container {
+                .banner-content {
+                    .toggle-container {
+                        .switch-light.switch-candy span span,
+                        .switch-light.switch-candy input:checked ~ span span:first-child,
+                        .switch-toggle.switch-candy label {
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    .dashboard-content-container {
+        .dashboard-banner {
+            background-size: cover;
+            .banner-content-container {
+                .banner-content {
+                    .toggle-container {
+                        .switch-light.switch-candy span span,
+                        .switch-light.switch-candy input:checked ~ span span:first-child,
+                        .switch-toggle.switch-candy label {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+<div class="activation-page"></div>
+<div data-ng-include="'views/beforeLogin/header/header.html'"></div>
+<div class="activation-content-container">
+    <div class="activation-content">
+        <div class="modal-title row text-center" data-ng-bind="activationTitle"></div>
+        <div class="col-xs-5 image-container text-center">
+            <img src="{{passwordBanner}}" alt="Password Banner" class="image-binder" />
+        </div>
+        <div class="form-container col-xs-7">
+            <form name="formValidator" class="form-validator" novalidate autocomplete="off" ng-submit="formValidator.$valid">
+                <div class="form-group form-validator-group" data-ng-repeat="(formKey,formField) in formBuildInfo">
+                    <div class="form-field-container">
+                        <md-input-container class="material-input-container"  data-ng-if="formField.title === 'PASSWORD'">
+                            <label class="control-label" data-ng-bind="formField.title"></label>
+                            <input type="{{formField.type}}" id="password" name="password" data-ng-model='formField.formModel' class="form-control" data-ng-required="formField.required" data-ng-pattern="formField.pattern" ng-maxlength="formField.maxLength">
+                            <!-- requiredMessage -->
+                            <div ng-messages="formValidator.password.$error" ng-if="formValidator.password.$touched" role="alert">
+                                <div class="error" ng-message="required" data-ng-bind="formField.validationMessage"></div>
+                                <div class="error" ng-message="pattern" data-ng-bind="formField.patternValidation"></div>
+                            </div>
+                        </md-input-container>
+                        <md-input-container class="material-input-container" data-ng-if="formField.title === 'CONFIRM PASSWORD'">
+                            <label class="control-label" data-ng-bind="formField.title"></label>
+                            <input type="{{formField.type}}" id="confirmPassword" name="confirmPassword" data-ng-model='formField.formModel' class="form-control" data-ng-required="formField.required" pw-check='password' data-ng-pattern="formField.pattern" ng-maxlength="formField.maxLength">
+                            <!-- passwordMatch message -->
+                            <div ng-show='formValidator.$error'>
+                                <span class='error' ng-show="!formValidator.confirmPassword.$error.required && formValidator.confirmPassword.$error.pwmatch" data-ng-bind="formField.passwordMatchMessage"> 
+                                </span>
+                            </div>
+                        </md-input-container>
+                    <div class="text-center" data-ng-if="$last">
+                        <div class="button-container inactive-button-container pull-right" data-ng-class="{'inactive-button-container':!formValidator.$valid}">
+                            <div class="text-binder" data-ng-bind="signIn" data-ng-click="activationSignIn(!formValidator.$valid)"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

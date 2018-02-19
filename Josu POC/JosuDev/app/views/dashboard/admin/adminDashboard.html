@@ -1,0 +1,70 @@
+<div class="dashboard-table-container" data-ng-controller="adminDashboardController">
+    <div class="content-container">
+        <div class="col-xs-12 table-container" data-ng-controller="tableController">
+            <div class="form-group">
+                <input class="form-control input-lg" type="text" placeholder="Need some help search here?" ng-model="search">
+                <span data-ng-if="isApplications" data-ng-click="shareApplication()" class="share-icon fa fa-share-alt" data-ng-class="{'share-icon-disabled':selectedJobs.length === 0, 'share-icon-pointer':selectedJobs.length > 0}"></span>
+            </div>
+            <div class="table-holder" data-ng-if="!isApplications">
+                <div data-ng-include="'views/table/table.html'"></div>
+            </div>
+            <div class="col-sm-4 application-container" data-ng-if="isApplications" data-ng-repeat="application in dataList | filter:search track by $index">
+                <div class="application-content-container pointer" data-ng-class="{'application-selected':application.isSelected}" data-ng-click="selectApplication(application)">
+                    <div class="application-content" data-ng-repeat="(key, value) in application track by $index" data-ng-if="(key === 'skills') || (key ==='jobTitle')">
+                        <div class="application-title-container">
+                            <div class="application-title" data-ng-bind="key | rename"></div>
+                            <div class="application-value-title" data-ng-if="key!=='skills'" data-ng-bind="value"></div>
+                            <div class="skill-values" data-ng-if="key==='skills'">
+                                <div class="application-value" data-ng-repeat="eachValue in value track by $index" data-ng-bind="eachValue"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-check no-pointer" data-ng-if="!application.isInfoSelected">
+                        <span class="fa fa-info-circle pointer" data-ng-click="openJobInfo(application)"></span>
+                    </div>
+                    <div class="info-check info-selected no-pointer" data-ng-if="application.isInfoSelected">
+                        <span class="fa fa-info-circle pointer"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination-container text-center" data-ng-if="!isApplications">
+            <uib-pagination total-items="totalItems" ng-model="currentPage" items-per-page="itemsPerPage" class="pagination-sm"></uib-pagination>
+        </div>
+    </div>
+</div>
+<md-sidenav class="sidenav-container md-sidenav-right md-whiteframe-4dp" md-component-id="shareOptions">
+<div class="college-select-container" data-ng-if="!infoSelected">
+    <span class="share-title">Select Colleges</span>
+    <span class="close-button close-share-options fa fa-times pull-right" data-ng-click="closeShareOptions()"></span>
+    <div class="text-center share-header">
+        <span>Create your account in easy steps with less informaction.</span>
+    </div>
+    <input class="form-control share-search input-lg" type="text" placeholder="Need some help search here?" ng-model="college"/>
+    <div class="colleges-container text-center">
+        <div class="pointer college-content" data-ng-repeat="college in colleges | filter:college track by $index" data-ng-click="selectCollege(college)">
+            <span class="fa fa-check-circle-o college-checkbox" data-ng-if="!college.isSelected"></span>
+            <span class="fa fa-check-circle college-checkbox checked" data-ng-if="college.isSelected"></span>
+            <span data-ng-bind="college.name"></span>
+        </div>
+    </div>
+    <div class="text-center submit-button-container">
+        <div class="button-container disabled text-center" data-ng-click="shareJobsWithColleges()" data-ng-class="{'active-submit':selectedColleges.length > 0}">Submit</div>
+    </div>
+    <div clsss="alert-danger text-center" data-ng-if="errorWhenPushed">Failed to push the data</div>
+</div>
+<div class="college-select-container" data-ng-if="infoSelected">
+    <span class="share-title">Job Description</span>
+    <span class="close-button close-share-options fa fa-times pull-right" data-ng-click="closeShareOptions()"></span>
+    <div class="text-center share-header">
+        <span>Please find the account information of the selected Job.</span>
+    </div>
+    <div class="job-description-container">
+        <div class="job-description-content" data-ng-repeat="(eachTitle, eachData) in currentApplication track by $index" data-ng-if="eachTitle.indexOf('Selected') === -1 && eachTitle.indexOf('Id') === -1">
+            <div class="job-description-title" data-ng-bind="eachTitle | rename"></div>
+            <div class="job-description-data" data-ng-if="eachTitle!=='skills'" data-ng-bind="eachData"></div>
+            <div class="job-description-data" data-ng-if="eachTitle==='skills'" data-ng-repeat="eachValue in eachData track by $index" data-ng-bind="eachValue"></div>
+        </div>
+    </div>
+</div>
+</md-sidenav>

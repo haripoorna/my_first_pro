@@ -1,0 +1,22 @@
+<div class="footer-container" data-ng-controller="footerController">
+    <div class="footer-content-container container">
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-4">
+                <a href="{{footerContent.footerContent.websiteLinks.digitalLync}}" target="_blank"><img class="companyLogo" src="{{footerContent.footerContent.footerLogo}}" alt="Owner"></a>
+                <div class="cs-footer-links" data-ng-bind="footerContent.footerContent.copyRight"></div>
+                <a href="http://www.lyncdigital.com/" target="_blank"><div class="cs-footer-links pointer" data-ng-bind="footerContent.footerContent.website"></div></a>
+                <ul class="social-links">
+                    <li class="fa fa-twitter pointer"></li>
+                    <li class="fa fa-facebook pointer"></li>
+                    <li class="fa fa-linkedin pointer"></li>
+                </ul>
+            </div>
+            <div class="col-sm-2" data-ng-repeat="(title, links) in footerContent.footerContent.quickLinks">
+                <div class="cs-footer-links-header" data-ng-bind="title"></div>
+                <div class="cs-footer-links pointer" data-ng-repeat="link in links">
+                    <a href="{{link.link}}" target="_blank"><div data-ng-bind="link.name"></div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

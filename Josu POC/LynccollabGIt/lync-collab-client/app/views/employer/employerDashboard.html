@@ -1,0 +1,31 @@
+<div data-ng-include="'views/afterLogin/header/header.html'"></div>
+<div class="employer-content-container">
+    <div class="employer-banner">
+        <div class="container banner-content-container">
+            <div class="banner-content col-xs-12">
+                Welcome, Company name
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="employer-table" data-ng-controller="employerDashboardController">
+    <md-content class="employer-table-content">
+        <md-tabs md-dynamic-height="" md-center-tabs="true">
+            <span class="empTable-container pull-right">
+              <div class="text-binder" data-ng-bind="addJobText" data-ng-click="resetAddJobText()" data-toggle="modal" data-target="#addJobModal"></div> 
+            </span>
+            <md-tab label="Student-List">
+                <md-content data-ng-controller="employerTableController">
+                    <table-directive data="studentList"></table-directive>
+                </md-content>
+            </md-tab>
+            <md-tab label="College-List" data-ng-click="headerText()">
+                <md-content data-ng-controller="employerTableController">
+                    <table-directive data="collegeList"></table-directive>
+                </md-content>
+            </md-tab>
+        </md-tabs>
+    </md-content>
+</div>
+<div data-ng-include="'views/modals/addJob-modal.html'"></div>

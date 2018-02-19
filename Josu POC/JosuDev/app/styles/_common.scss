@@ -1,0 +1,155 @@
+body,
+html {
+    font-family: 'Roboto' !important;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+*:focus {
+    outline: none !important;
+    border: 0;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.disabled {
+    cursor: not-allowed !important;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
+.no-pointer {
+    cursor: default;
+}
+
+.full-page {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.parent-container {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    .child-container {
+        align-self: center;
+        border-radius: 8px;
+    }
+}
+
+.button-container {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 6px;
+    padding: 11px 47px;
+    width: 288px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #b1b1b1;
+    color: #b1b1b1;
+}
+
+.inactive-button-container {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 11px 47px;
+    width: 288px;
+    height: 40px;
+    border-radius: 100px;
+    background-image: none;
+    border: solid 1px $black;
+    cursor: not-allowed;
+    color: $black
+}
+
+.interactive-container {
+    height: 37px;
+    padding: 14px;
+    .invalid-credentails-container {
+        height: 20px;
+        font-size: 12px;
+        color: $white;
+        background-color: $darkRed;
+        text-align: center;
+        border-radius: 100px;
+        padding: 3px;
+        width: 240px;
+        margin: auto;
+    }
+    .correct-credentails-container {
+        height: 20px;
+        font-size: 12px;
+        color: $white;
+        background-color: $greenBanner;
+        text-align: center;
+        border-radius: 100px;
+        padding: 3px;
+        width: 240px;
+        margin: auto;
+    }
+}
+
+.form-control,
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+.close-button {
+    font-size: 11px;
+    float: right;
+    margin: -38px -2px;
+    border-radius: 100%;
+    color: #CFCFCF;
+    border: 1px solid #CFCFCF;
+    padding: 12px;
+}
+
+.close-button:hover {
+    background-color: #2fa1da;
+    color: $white;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
+.close-button-if-noToggle {
+    margin: 0px;
+}
+
+.login-image-container {
+    img {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .button-container {
+        width: 210px;
+    }
+    .inactive-button-container {
+        width: 210px;
+    }
+}

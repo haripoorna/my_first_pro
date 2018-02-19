@@ -1,0 +1,60 @@
+.editProfile-container {
+    .close-editProfile {
+        font-size: 11px;
+        float: right;
+        position: absolute;
+        top: 22px;
+        right: 10px;
+        border-radius: 100%;
+        color: #CFCFCF;
+        border: 1px solid #CFCFCF;
+        padding: 12px;
+    }
+    .close-editProfile:hover {
+        background-color: #2fa1da;
+        color: $white;
+        -webkit-transition: all 250ms ease-in-out;
+        -moz-transition: all 250ms ease-in-out;
+        -ms-transition: all 250ms ease-in-out;
+        -o-transition: all 250ms ease-in-out;
+        transition: all 250ms ease-in-out;
+    }
+    .profile-image-container {
+        height: 160px;
+        width: 160px;   
+        margin: auto;
+        img {
+            height: 160px;
+            width: 160px;
+            border-radius: 100%;
+            margin: auto;
+            cursor: pointer;
+            border: 1px solid $theme;
+        }
+    }
+    .username-header {
+        color: $theme;
+    }
+    .editProfile-header-container {}
+    .edit-form-container {}
+}
+
+.modal-backdrop.in {
+    opacity: 0 !important;
+    display: none;
+}
+
+.cropArea {
+    background: #E4E4E4;
+    overflow: hidden;
+    width: 300px;
+    height: 150px;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-dialog {
+        width: 100% !important;
+        margin: 30px auto;
+    }
+}

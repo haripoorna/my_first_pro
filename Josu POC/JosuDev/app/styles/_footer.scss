@@ -1,0 +1,35 @@
+.footer-container {
+    background-color: $footerBackground;
+    padding: 60px;
+    .footer-content-container {
+        text-align: left;
+        color: $americano;
+        a {
+            text-decoration: none;
+            color: $americano;
+        }
+        .companyLogo {
+            width: 170px;
+        }
+        .cs-footer-links-header {
+            padding: 8px;
+            color: $white;
+            font-weight: bold;
+        }
+        .cs-footer-links {
+            padding: 8px;
+            text-decoration: none;
+            color: $americano;
+        }
+        .cs-footer-links:hover {
+            text-decoration: none;
+        }
+        .social-links {
+            text-align: left;
+            padding: 0px !important;
+            li {
+                padding-left: 8px;
+            }
+        }
+    }
+}

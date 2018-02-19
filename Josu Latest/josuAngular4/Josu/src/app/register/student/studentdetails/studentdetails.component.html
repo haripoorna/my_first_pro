@@ -1,0 +1,32 @@
+<h2 class="font">Student Details</h2>
+<p class="font">Create your account in easy steps with less information.</p>
+<div [formGroup]="StudentdetailsForm" >
+  <md-input-container class="style3">
+    <input mdInput placeholder="Contact Number*" formControlName="contactnumber" [(ngModel)]="info.contactNumber" numbersonly maxlength="10" minlength="10">
+  </md-input-container>
+  <md-input-container class="style3">
+    <input mdInput placeholder="D.O.B*"  formControlName="dob" [(ngModel)]="info.dob">
+  </md-input-container><br>
+  <md-input-container class="style1">
+    <input mdInput placeholder="Address*"  formControlName="address" [(ngModel)]="info.address">
+  </md-input-container><br>
+  <md-input-container class="style3">
+    <input mdInput placeholder="Zipcode*"  formControlName="zipcode" [(ngModel)]="info.zipcode" numbersonly maxlength="6" minlength="6">
+  </md-input-container>
+  <md-input-container class="style3">
+    <input mdInput placeholder="City*"  formControlName="city" [(ngModel)]="info.city">
+  </md-input-container><br>
+  <md-input-container class="style3">
+    <input mdInput placeholder="State*"  formControlName="state" [(ngModel)]="info.state">
+  </md-input-container>
+   <md-input-container class="style3">
+    <input mdInput placeholder="Country*"  formControlName="country" [(ngModel)]="info.country">
+  </md-input-container><br>
+  
+    <button type="button" class="btn btn-info" [disabled]="!StudentdetailsForm.valid" (click)="next()">Next</button>
+ 
+    <div>
+<img class="image" src="../../assets/images/employer.png">
+</div>
+  
+</div>

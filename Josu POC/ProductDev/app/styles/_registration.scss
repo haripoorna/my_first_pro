@@ -1,0 +1,162 @@
+*:focus {
+    outline: none !important;
+    border: 0;
+}
+
+.full-page {
+    .login-content-container {
+        .login-content {
+            .navigation-header {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+            .navigation-container {
+                color: #484848;
+                font-size: 18px;
+                padding: 20px 40px;
+                .navigator {
+                    opacity: 0.5;
+                    cursor: pointer;
+                    font-size: 28px !important;
+                }
+            }
+            .form-validator {}
+            .form-validator-group {
+                .form-field-container {
+                    .material-input-container {
+                        margin-left: 12px !important;
+                        margin-right: 12px !important;
+                        .control-label {
+                            font-size: 11px
+                        }
+                        .form-control {
+                            width: 100%;
+                        }
+                    }
+                    .half-width {
+                        width: 125px;
+                    }
+                    .full-width {
+                        width: 250px;
+                    }
+                }
+            }
+            .button-container {
+                margin-top: 0px;
+            }
+        }
+    }
+    .form-validator,
+    .registration-form-validator,
+    .addJob-form-validator {
+        .form-validator-group {
+            margin-bottom: 0px !important;
+            .form-field-container {
+                padding-left: 20px;
+                .material-input-container {
+                    margin: 10px 0 !important;
+                    .control-label {}
+                    .form-control {
+                        width: 270px;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+        .button-container {
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            margin-top: 30px;
+            padding: 11px 47px;
+            width: 250px;
+            height: 40px;
+            border-radius: 100px;
+            background-image: linear-gradient(to bottom, #3dbdb6, #0089ce);
+        }
+        .inactive-button-container {
+            background-image: none;
+            border: solid 1px #000000;
+            cursor: not-allowed;
+            color: #000000;
+        }
+    }
+    .no-padding {
+        padding: 0px !important;
+    }
+    .disabled {
+        cursor: not-allowed !important;
+    }
+    .full-page {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    .parent-container {
+        z-index: 10;
+        display: flex;
+        .child-container {}
+    }
+}
+
+.md-sidenav-right {
+    width: 400px;
+}
+
+.slider {
+    md-backdrop.md-opaque {
+        opacity: 0.9 !important;
+    }
+    md-backdrop.md-opaque.md-default-theme,
+    md-backdrop.md-opaque {
+        background-color: #2fa1da;
+    }
+    md-sidenav,
+    md-backdrop {
+        position: fixed !important;
+    }
+}
+
+.toggle-container {
+    .switch-toggle.switch-candy,
+    .switch-light.switch-candy > span {
+        background-color: #f1f1f1;
+        border-radius: 100px;
+        width: 60%;
+        border:solid 1px #cfcfcf !important;
+        box-shadow: none;
+    }
+    .switch-toggle {
+        position: relative;
+        display: block;
+        padding: 5px !important;
+    }
+    .switch-light.switch-candy span span,
+    .switch-light.switch-candy input:checked ~ span span:first-child,
+    .switch-toggle.switch-candy label {
+        color: #b1b1b1;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: unset;
+    }
+    .switch-light.switch-candy input ~ span span:first-child,
+    .switch-light.switch-candy input:checked ~ span span:nth-child(2),
+    .switch-candy input:checked + label {
+        color: #ffffff;
+        outline: none;
+        text-shadow: unset;
+    }
+    .switch-candy a {
+        border: none;
+        border-radius: 100px;
+        background-color: #2fa1da;
+    }
+    .switch-candy-blue a {
+        background-color: #38a3d4;
+    }
+    .switch-candy-yellow a {
+        background-color: #f5e560;
+    }
+}

@@ -1,0 +1,37 @@
+<h2 class="font">Personal Details</h2>
+<p class="font">Create your account in easy steps with less information.</p>
+<div [formGroup]="employerDetailsForm" >
+  <md-input-container class="style3">
+    <input mdInput placeholder="Mobile Number*" formControlName="Mobile" [(ngModel)]="info.mobile">
+  </md-input-container>
+  <md-input-container class="style3">
+    <input mdInput placeholder="Fax*" formControlName="Fax" [(ngModel)]="info.fax">
+  </md-input-container>
+</div>
+<div [formGroup]="employerDetailsForm" >
+  <md-input-container class="style1">
+    <input mdInput placeholder="Address*" formControlName="Address" [(ngModel)]="info.address">
+  </md-input-container>
+</div>
+<div [formGroup]="employerDetailsForm" >
+  <md-input-container class="style3">
+    <input mdInput placeholder="Zipcode*" formControlName="Zipcode" [(ngModel)]="info.zipcode" numbersonly maxlength="6" minlength="6">
+  </md-input-container>
+  <md-input-container class="style3">
+    <input mdInput placeholder="City*" formControlName="City" [(ngModel)]="info.city">
+  </md-input-container>
+</div>
+<div [formGroup]="employerDetailsForm" >
+  <md-input-container class="style3 ">
+    <input mdInput placeholder="State*" formControlName="State" [(ngModel)]="info.state">
+  </md-input-container>
+  <md-input-container class="style3">
+    <input mdInput placeholder="Country*" formControlName="Country" [(ngModel)]="info.country">
+  </md-input-container>
+</div>
+    <button type="button" class="btn btn-info" [disabled]="!employerDetailsForm.valid" (click)="next()" >Next</button>
+ 
+    <div>
+<img class="image" src="../../assets/images/employer.png">
+</div>
+  

@@ -1,0 +1,38 @@
+<div class="registration-container" data-ng-if="isRegistration" data-ng-controller="registrationController">
+    <div data-ng-if="!isRegistrationForm && !isRegistrationSuccess">
+        <div class="slider-content">
+            <h2 data-ng-bind="signUpHeaderInfo.heading"></h2>
+            <p data-ng-bind="signUpHeaderInfo.paragraph"></p>
+        </div>
+        <md-content layout-padding class="sidenav-body login-form-container text-center">
+            <div class="button-container text-center" data-ng-repeat="(selectedRole,selectedRoleObject) in signUpInfo" data-ng-click="openRegistrationForm(selectedRole,selectedRoleObject)">
+                <div data-ng-bind="selectedRole"></div>
+            </div>
+        </md-content>
+        <div class="login-image-container text-center">
+            <img src="{{userImages.loginImage}}" alt="login" />
+        </div>
+    </div>
+    <div data-ng-if="isRegistrationForm">
+        <span data-ng-if="isLeftNavigation" class="left-navigator fa fa-angle-left pull-left" data-ng-class="{'disabled-left-navigator':disableLeftNavigation}" data-ng-click="navigateRegistration(!disableLeftNavigation, false)"></span>
+        <div class="navigation-container text-center">
+            <h3 class="navigation-header" data-ng-bind="formHeader"></h3>
+            <p>Create your account in easy steps with less information.</p>
+        </div>
+        <md-content layout-padding class="sidenav-body login-form-container form-container">
+            <div data-ng-include="'views/form/formBuilder.html'"></div>
+        </md-content>
+        <div class="login-image-container text-center">
+            <img src="{{selectedRoleObject.image}}" alt="Logo" />
+        </div>
+    </div>
+    <div data-ng-if="isRegistrationSuccess">
+        <md-content layout-padding class="sidenav-body text-center login-form-container form-container">
+            <h3 data-ng-bind="registrationSuccessInfo.heading"></h3>
+            <p data-ng-bind="registrationSuccessInfo.message"></p>
+        </md-content>
+        <div class="login-image-container text-center">
+            <img src="{{registrationSuccessInfo.image}}" alt="Logo" />
+        </div>
+    </div>
+</div>

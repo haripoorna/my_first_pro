@@ -1,0 +1,66 @@
+<md-sidenav-container class=" ">
+<div class="dashboard-table-container" >
+    <div class="">
+        <div class="col-xs-12 table-container" >
+            <div class="form-group">
+                <input class="form-control input-lg" type="text" [(ngModel)]="term" placeholder="Need some help search here?" ng-model="search">
+                <span data-ng-if="isApplications" class="share-icon fa fa-share-alt" ></span>
+            </div>
+            <div class="table-holder" data-ng-if="!isApplications">
+              
+                
+            </div>
+           
+            <div class="col-sm-4 application-container" *ngFor="let item of jobList | filter:term">
+                <div class="application-content-container pointer" >
+                    <div class="application-content">
+                        <div class="application-title-container">
+                            <div class="application-title">Job Title</div>
+                            <div class="application-value-title"  >{{item.jobTitle}}</div>
+                            <div class="skill-values" >Skills
+                               
+                                <div class="application-value" *ngFor="let skill of item.skills" >{{skill}}
+                                    
+
+                                </div>
+
+                                <!--<i class="fa fa-info-circle" (click)="selectedJob=item;sidenavright.open()" style="float:right;"></i>-->
+
+                            </div>
+                        </div>
+                    </div>
+                   
+                  <i class="fa fa-info-circle" (click)="selectedJob=item;sidenavright.open()" style="float:right;margin-top: 14%;"></i>
+
+                </div>
+                   
+            </div>
+
+
+            
+        </div>
+      
+    </div>
+</div>
+  </md-sidenav-container>
+
+
+  <md-sidenav align="end" #sidenavright  class="example-sidenav" style="position:fixed;top:0;right:0;">
+    <button md-button class="closebutton" (click)="sidenavright.close()">&times;</button>
+  <h3 class="job"> Job Description </h3>
+  <h2 class="account">Please find the account information of the selected Job.
+  </h2>
+  <p class="jobtitle">Job Title</p>
+  <div class="selectedjob" >{{selectedJob.jobTitle}}</div>
+  <p class="jobtitle">Job Desc</p>
+  <div class="selectedjob">{{selectedJob.jobDesc}}</div>
+  <!--<h1>Skills</h1>
+  <div>{{selectedJob.skills[0]}}</div>-->
+   <p class="jobtitle">Skills</p>
+  <div class="selectedjob" *ngFor="let skill of selectedJob.skills" >{{skill}}
+     </div>
+  <!--<i class="fa fa-info-circle" (click)="selectedJob=item;sidenavright.open()" style="float:right;"></i>-->
+
+  </md-sidenav>  
+  
+

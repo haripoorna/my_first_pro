@@ -1,0 +1,5 @@
+<table class="table">
+     <tr ng-repeat="user in tableData track by $index">
+    	<td ng-repeat="column in objectKeys">{{user[column]}}</td>    	
+    </tr>
+</table>

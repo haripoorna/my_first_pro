@@ -1,0 +1,19 @@
+<div class="editProfile-container registration-container" data-ng-controller="editProfileController">
+    <div class="editProfile-header-container">
+        <span data-ng-if="isLeftNavigation" class="left-navigator fa fa-angle-left pull-left" data-ng-class="{'disabled-left-navigator':disableLeftNavigation}" data-ng-click="navigateRegistration(!disableLeftNavigation, false)"></span>
+        <span class="text-center text-capitalize">
+            <h2 class="username-header" data-ng-bind="userName"></h2>
+        </span>
+        <span class="close-editProfile fa fa-times pull-right" data-ng-click="closeEditProfile()"></span>
+    </div>
+    <md-content layout-padding class="sidenav-body login-form-container form-container full-width">
+        <div data-toggle="modal" data-target="#uploadProfilePic" class="profile-image-container">
+            <img src="192.168.1.9:9000/image/designer.png">
+        </div>
+        <div class="text-center text-capitalize">
+            <h3 class="username-header" data-ng-bind="editProfile"></h3>
+        </div>
+        <div data-ng-include="'views/form/editFormBuilder.html'"></div>
+    </md-content>
+</div>
+<div data-ng-include="'views/modal/editProfileImage.html'"></div>

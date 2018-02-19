@@ -1,0 +1,28 @@
+.content-container{
+	.employer-logo-container img{
+		margin-top:12px;
+        width: 48px;
+	}
+	.empProfile-container {
+            cursor: pointer;
+            margin-top: 17px;
+            margin-left:20px;
+            width: 90px;
+            height: 38px;
+            border-radius: 100px;
+            border: solid 1px $white;
+            .text-binder {
+                font-size: 14px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: left;
+                padding: 12px 19px;
+            }
+            .text-binder:focus {
+                outline: none;
+            }
+        }
+}

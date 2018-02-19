@@ -1,0 +1,39 @@
+<form name="formValidator" class="form-validator" novalidate="novalidate" autocomplete="off" data-ng-repeat="(formCategory, formData) in editFormBuildInfo" data-ng-if="formData.isSelected">
+    <div class="form-group form-validator-group" data-ng-repeat="(formKey,formField) in formData.formInfo" float-label field-model="formField.formModel">
+        <div class="form-field-container">
+            <md-input-container class="material-input-container no-padding {{formField.css}}" data-ng-class="{'col-xs-6':(formField.css==='half-width')}" data-ng-if="formField.type === 'text' || formField.type === 'email'">
+                <label class="control-label " data-ng-bind="formField.title"></label>
+                <input type="{{formField.type}}" data-ng-model="userDetails[formKey]" name="name{{$index}}" class="form-control" data-ng-required="formField.required" data-ng-pattern="formField.pattern" ng-maxlength="formField.maxLength" data-ng-blur="checkAvailability(formField)" data-ng-focus="fnCheckForNameExistence(formField.title)" data-ng-disabled="formField.isNotEditMode">
+                <div ng-messages="formValidator['name' + $index].$error" ng-if="formValidator['name' + $index].$touched" role="alert">
+                    <div class="error" ng-message="required" data-ng-bind="formField.validationMessage"></div>
+                    <div class="error" ng-message="pattern" data-ng-bind="formField.patternValidation"></div>
+                </div>
+            </md-input-container>
+
+            <md-input-container class="material-input-container no-padding {{formField.css}}" data-ng-class="{'col-xs-6':(formField.css==='half-width')}" data-ng-if="formField.type === 'select'">
+                <label class="control-label" data-ng-bind="formField.title"></label>
+                <md-select data-ng-model="userDetails[formKey]" data-ng-disabled="formField.isNotEditMode" class="material-select-container" data-ng-required="formField.required" data-ng-if="formField.title === 'Year of Passout'">
+                    <md-option value="{{ year }}" data-ng-repeat="(index, year) in yearList track by $index">{{ year }}</md-option>
+                </md-select>
+                <md-select data-ng-model="userDetails[formKey]" data-ng-disabled="formField.isNotEditMode"  class="material-select-container" data-ng-required="formField.required" data-ng-if="formField.title === 'Branch'">
+                    <md-option value="{{ branch.type }}" data-ng-repeat="(index, branch) in branchList track by $index">{{ branch.type }}</md-option>
+                </md-select>
+                <md-select data-ng-model="userDetails[formKey]" data-ng-disabled="formField.isNotEditMode" class="material-select-container" data-ng-required="formField.required" data-ng-if="formField.title === 'College Name'">
+                    <md-option value="{{ college }}" data-ng-repeat="(index, college) in colleges track by $index">{{ college }}</md-option>
+                </md-select>
+            </md-input-container>
+        </div>
+    </div>
+    <div class="text-center" data-ng-if="!$last">
+        <span class="navigator fa fa-angle-right text-center" data-ng-class="{'disabled disableRightNavigator':(disableRightNavigation || !formValidator.$valid)}" data-ng-click="navigateRegistration(!disableRightNavigation, true, formValidator.$valid)"></span>
+    </div>
+    <div class="text-center" data-ng-if="$last">
+        <div class="inactive-button-container" data-ng-class="{'button-container':formValidator.$valid}">
+            <div class="text-binder" data-ng-click="update(!formValidator.$valid)">DONE</div>
+        </div>
+    </div>
+    <div class="interactive-container">
+        <div class="invalid-credentails-container" data-ng-if="userNameErrorMessage"><span data-ng-bind="userCheckMessage"></span></div>
+        <div class="invalid-credentails-container" data-ng-if="emailErrorMessage"><span data-ng-bind="emailCheckMessage"></span></div>
+    </div>
+</form>

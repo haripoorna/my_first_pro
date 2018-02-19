@@ -1,0 +1,36 @@
+<form name="studentValidator" class="form-validator" novalidate="novalidate" autocomplete="off">
+    <div class="form-group form-validator-group" data-ng-repeat="(formKey, formField) in SignUpformBuildInfo" float-label field-model="formField.formModel">
+        <md-input-container class="material-input-container inputContainer" data-ng-if="formField.type === 'text' || formField.type === 'email'">
+            <label class="control-label labelFocus" data-ng-bind="formField.title"></label>
+            <input type="{{formField.type}}" class="focusLabel" data-ng-model="formField.formModel" name="name{{$index}}" class="form-control" data-ng-required="formField.required" data-ng-pattern="formField.pattern">
+        </md-input-container>
+        <div ng-messages="studentValidator['name' + $index].$error" ng-if="studentValidator['name' + $index].$touched" role="alert">
+            <div class="error" ng-message="required" data-ng-bind="formField.validationMessage"></div>
+            <div class="error" ng-message="email" data-ng-bind="formField.validationMessage2"></div>
+        </div>
+        <div data-ng-if="formField.type === 'radio'">
+            <md-input-container class="material-input-container inputContainer">
+                <p class="control-label focusLabel" data-ng-bind="formField.title"></p>
+                <md-radio-group id="gender" name="gender" data-ng-required="formField.required" data-ng-model="formField.formModel">
+                    <md-radio-button data-ng-repeat="gender in formField.values" ng-value="gender">
+                        {{gender}}
+                    </md-radio-button>
+                </md-radio-group>
+            </md-input-container>
+            <div ng-messages="studentValidator.gender.$error" ng-if="studentValidator.gender.$touched">
+                <div class="error" ng-message="required">Please select the gender</div>
+            </div>
+        </div>
+        <div data-ng-if="formField.type === 'checkbox'">
+            <md-input-container class="material-input-container inputContainer">
+                <md-checkbox name="check" data-ng-model="formField.formModel" data-ng-required="formField.required">
+                    <p class="control-label focusLabel" data-ng-bind="formField.title"></p>
+                </md-checkbox>
+            </md-input-container>
+            <div ng-messages="studentValidator.check.$error" ng-if="studentValidator.check.$touched">
+                <div class="error" ng-message="required" data-ng-bind="formField.validationMessage"></div>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="button-container signUpButton"><span class="text-binder">Sign Up</span></button>
+</form>

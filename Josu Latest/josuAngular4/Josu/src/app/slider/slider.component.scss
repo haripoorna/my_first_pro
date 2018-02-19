@@ -1,0 +1,74 @@
+ p.font{
+    font-size: 18px;
+    text-align: center;
+    font-weight:500px
+}
+h2.font{
+     text-align: center;
+      font-weight:bold
+}
+md-input-container.style1{
+width: 250px;
+margin-top: 10px;
+   
+}
+button.btn-info{
+   margin-top: 20px;
+    border-radius: 25px;
+        width: 240px;
+        height: 40px;
+}
+p.style2{
+    margin-top: 20px;
+}
+
+
+$bg: #000;
+$fg: #439CD2;
+$borderWidth: 1px;
+
+body {
+  background: $bg;
+  font-family: roboto;
+}
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+ 
+}
+
+label {
+  color: lighten($bg,70%);
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 12px 35px;
+  margin: 0px;
+   border-radius: 30px;
+   border: none;
+}
+
+input[type=radio]:checked + label{
+  color: #fff;
+  background: $fg;
+  
+}
+
+label + input[type=radio] + label {
+  margin: 0px;
+}
+.radio-group {
+  border: solid $borderWidth $fg;
+  display: inline-block;
+  
+  border-radius: 10px;
+  overflow: hidden;
+  color:#000;
+   border-radius: 30px;
+}
+
+div.radio-group{
+    margin-left: 48px;
+}

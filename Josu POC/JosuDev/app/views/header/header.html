@@ -1,0 +1,34 @@
+<div class="header-container" data-ng-controller="headerController">
+    <div class="container content-container">
+        <span class="logo-container">
+            <img src="{{headerContent.headerContent.logo}}" alt="JOSU" class="logo-binder"/>
+        </span>
+        <span class="header-controls-container pull-right visible-xs">
+            <div class="header-menu fa fa-bars inline-block pointer" data-ng-click="openHeaderDropdown()" aria-hidden="true"></div>
+        </span>
+        <span class="header-controls-container pull-right hidden-xs">
+            <span class="tab-container">
+                <div class="inactive-tab inline-block pointer" data-ng-class="{'active-tab':tab.isActive}" data-ng-repeat="tab in headerContent.headerContent.tabs" data-ng-bind="tab.name" data-ng-click="openTab(tab.state)"></div>
+            </span>
+            <span class="signin-container inline-block pointer">
+                <div class="signin inline-block" data-ng-bind="headerContent.headerContent.signin" data-ng-click="login(); resetLoginText()" data-ng-if="!disableSignIn && headerContent.headerContent.signin"></div>
+                <div class="signout inline-block" data-ng-bind="headerContent.headerContent.logout" data-ng-click="logout()" data-ng-if="!disableSignIn && headerContent.headerContent.logout"></div>
+                <div class="signin inline-block" data-ng-bind="headerContent.headerContent.signin" data-ng-if="disableSignIn"></div>
+            </span>
+        </span>
+    </div>
+    <div data-ng-if="isDropdown" class="header-dropdown visible-xs">
+        <span class="fa fa-caret-up drop-down-caret"></span>
+        <div data-ng-repeat="tab in headerContent.headerContent.tabs" class="dropdown-tab pointer" data-ng-click="openTab(tab.state)">
+            <div data-ng-bind="tab.name"></div>
+        </div>
+        <span class="pointer signin-container">
+            <div class="dropdown-tab" data-ng-bind="headerContent.headerContent.signin" data-ng-click="login(); resetLoginText()" data-ng-if="!disableSignIn && headerContent.headerContent.signin"></div>
+            <div class="dropdown-tab" data-ng-bind="headerContent.headerContent.logout" data-ng-click="logout()" data-ng-if="!disableSignIn && headerContent.headerContent.logout"></div>
+            <div class="dropdown-tab" data-ng-bind="headerContent.headerContent.signin" data-ng-if="disableSignIn"></div>
+        </span>
+    </div>
+</div>
+<md-sidenav class="sidenav-container md-sidenav-right md-whiteframe-4dp" md-component-id="right">
+    <div data-ng-include="'views/slider/slider.html'"></div>
+</md-sidenav>

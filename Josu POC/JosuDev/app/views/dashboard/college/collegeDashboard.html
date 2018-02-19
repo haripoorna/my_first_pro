@@ -1,0 +1,15 @@
+<div class="dashboard-table-container" data-ng-controller="collegeDashboardController">
+    <div class="content-container">
+        <div class="col-xs-12 table-container" data-ng-controller="tableController">
+            <div class="form-group">
+                <input class="form-control input-lg" type="text" placeholder="Need some help search here?" ng-model="search">
+            </div>
+            <div class="table-holder">
+                <div data-ng-include="'views/table/table.html'"></div>
+            </div>
+        </div>
+        <div class="pagination-container text-center">
+            <uib-pagination total-items="totalItems" ng-model="currentPage" items-per-page="itemsPerPage" class="pagination-sm"></uib-pagination>
+        </div>
+    </div>
+</div>

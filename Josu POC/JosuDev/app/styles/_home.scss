@@ -1,0 +1,80 @@
+.home-content-container {
+    .home-banner {
+        background: url("../images/banner.png") no-repeat center center fixed;
+        .banner-content-container {
+            height: 100%;
+            .banner-content {
+                padding: 150px 0px;
+                color: $white;
+                .banner-title {
+                    font-size: 60px;
+                    font-weight: 300;
+                }
+                .banner-description {
+                    font-size: 18px;
+                }
+            }
+            .banner-logo-container {
+                .banner-logo {
+                    width: 489px;
+                    margin-bottom: -65px;
+                }
+            }
+        }
+    }
+    .customer-support {
+        margin-top: 100px;
+        .cs-header {
+            padding-bottom: 10px;
+            font-size: 32px;
+            font-weight: 300;
+            color: $nightRider;
+        }
+        .cs-grids {
+            .cs-icon-container {
+                padding-top:20px;
+                .cs-icon {
+                    width: 100px;
+                }
+            }
+            .cs-title {
+                padding: 10px;
+                color: $nightRider;
+                font-size: 16px;
+            }
+            .cs-description {
+                padding: 5px;
+                font-size: 16px;
+                color: $americano;
+            }
+            .cs-link {
+                padding: 2px;
+                font-size: 14px;
+                color: $dodgerBlue;
+            }
+        }
+    }
+    .quote-container {
+        margin-top: 50px;
+        padding: 80px 0px;
+        background-color: $greenBanner;
+        color: $white;
+        .quote-binder {
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .quote-author {
+            padding-right: 50px;
+            font-size: 24px;
+            font-weight: bold;
+            font-style: italic;
+        }
+    }
+    .company-logo-container {
+        padding: 20px;
+        .company-logo {
+            padding: 10px;
+            width:250px;
+        }
+    }
+}

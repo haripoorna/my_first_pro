@@ -1,0 +1,45 @@
+<div data-ng-include="'views/header/header.html'"></div>
+<div class="home-content-container">
+    <div class="home-banner">
+        <div class="container banner-content-container">
+            <div class="banner-content text-center">
+                <div class="text-center banner-title" data-ng-bind="homePageContent.bannerContent.title"></div>
+                <div class="text-center banner-description" data-ng-bind="homePageContent.bannerContent.description"></div>
+            </div>
+            <div class="text-center banner-logo-container hidden-xs">
+                <img class="banner-logo" src="{{homePageContent.bannerContent.designer}}" alt="designer">
+            </div>
+        </div>
+    </div>
+    <div class="container customer-support">
+    	<div class="cs-header text-center" data-ng-bind="homePageContent.customerSupport.header"></div>
+    	<div class="cs-grids row">
+    		<div class="col-sm-4 text-center" data-ng-repeat="grid in homePageContent.customerSupport.supportGrids">
+    			<div class="cs-icon-container">
+    				<img class="cs-icon" src="{{grid.icon}}" alt="{{grid.title}}">
+    			</div>
+    			<div class="cs-title" data-ng-bind="grid.name"></div>
+    			<div class="cs-description" data-ng-bind="grid.description"></div>
+    			<div class="cs-link pointer" data-ng-bind="grid.link"></div>
+    		</div>
+    	</div>
+    </div>
+    <div class="quote-container">
+    	<div class="container">
+    		<div class="quote-binder text-center" data-ng-bind="homePageContent.quoteContent.quote"></div>
+    		<div class="quote-author pull-right" data-ng-bind="homePageContent.quoteContent.author"></div>
+    	</div>
+    </div>
+    <div class="company-logo-container text-center container">
+    	<div class="col-sm-4">
+    		<a href="{{footerContent.footerContent.websiteLinks.lyncDigital}}" target="_blank"><img class="company-logo" src="images/lyncDigitalLogo.png" alt="lyncDigital"></a>
+    	</div>
+    	<div class="col-sm-4">
+    		<a href="{{footerContent.footerContent.websiteLinks.digitalLync}}" target="_blank"><img class="company-logo" src="images/digitalLyncLogo.png" alt="digitalLync"></a>
+    	</div>
+    	<div class="col-sm-4">
+    		<a href="{{footerContent.footerContent.websiteLinks.digitalCollab}}" target="_blank"><img class="company-logo" src="images/digitalCollabLogo.png" alt="lyncCollab"></a>
+    	</div>
+    </div>
+</div>
+<div data-ng-include="'views/footer/footer.html'"></div>

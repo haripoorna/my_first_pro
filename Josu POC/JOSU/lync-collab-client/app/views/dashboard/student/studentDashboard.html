@@ -1,0 +1,15 @@
+<div class="dashboard-table-container" data-ng-controller="studentDashboardController">
+    <div class="content-container">
+        <div class="col-xs-12 table-container">
+            <div class="text-center">
+                <div class="tab-container">
+                    <div class="text-binder" data-ng-click="fetchTableData('employer')">Employer-List</div>
+                    <div class="text-binder" data-ng-click="fetchTableData('student')">Job-List</div>
+                </div>
+            </div>
+            <div class="table-holder">
+                <table-directive data="dataList"></table-directive>
+            </div>
+        </div>
+    </div>
+</div>

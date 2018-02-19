@@ -1,0 +1,51 @@
+<div daya-ng-controller="registrationController" layout="column" style="height:500px;" ng-cloak>
+    <section class="slider" layout="row" flex>
+        <md-content flex layout-padding>
+            <div layout="column" layout-align="top center">
+                <div>
+                    <md-button data-ng-click="toggleRight()" ng-hide="isOpenRight()" class="md-primary">
+                        Toggle right
+                    </md-button>
+                </div>
+            </div>
+            <div flex></div>
+        </md-content>
+        <md-sidenav class="sidenav-container md-sidenav-right md-whiteframe-4dp" md-component-id="right">
+            <div class="sidenav-header">
+                <div class="toggle-container">
+                    <!-- toggle switch component -->
+                    <fieldset>
+                        <div class="switch-toggle switch-candy">
+                            <input id="week" name="view" type="radio" checked>
+                            <label for="week" data-ng-click="">login</label>
+                            <input id="month" name="view" type="radio">
+                            <label for="month" data-ng-click="">Sign-up</label>
+                            <a></a>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="pull-right">
+                    <span class="close-login fa fa-times pull-right" data-ng-click="close()"></span>
+                </div>
+            </div>
+            <md-content layout-padding class="sidenav-body">
+                <div class="full-page login-page">
+                    <div class="login-content-container parent-container">
+                        <div class="login-content child-container">
+                            <div class="navigation-container text-center">
+                                <span class="navigator fa fa-angle-left pull-left" data-ng-class="{'disabled':disableLeftNavigation}" data-ng-click="navigateRegistration(!disableLeftNavigation, false)"></span>
+                                <span class="navigation-header" data-ng-bind="formHeader"></span>
+                                <span class="navigator fa fa-angle-right pull-right" data-ng-class="{'disabled':disableRightNavigation}" data-ng-click="navigateRegistration(!disableRightNavigation, true)"></span>
+                                <!-- <span  class="pull-right"><md-button class="md-default md-fab md-fab-top-left  fa fa-angle-left" data-ng-class="{'disabled':disableRightNavigation}" data-ng-click="navigateRegistration(!disableRightNavigation, true)"></md-button></span> -->
+                            </div>
+                            <p>Create your account in easy steps with less information.</p>
+                            <div class="form-container">
+                                <div data-ng-include="'views/form/registration-form.html'"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </md-content>
+        </md-sidenav>
+    </section>
+</div>

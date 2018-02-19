@@ -1,0 +1,42 @@
+.toggle-container {
+    .switch-toggle.switch-candy,
+    .switch-light.switch-candy > span {
+        background-color: $seaShell;
+        border-radius: 100px;
+        width: 65%;
+        border: solid 1px $gray81 !important;
+        box-shadow: none;
+        margin: auto;
+    }
+    .switch-toggle {
+        position: relative;
+        display: block;
+        padding: 5px !important;
+    }
+    .switch-light.switch-candy span span,
+    .switch-light.switch-candy input:checked ~ span span:first-child,
+    .switch-toggle.switch-candy label {
+        color: #b1b1b1;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: unset;
+    }
+    .switch-light.switch-candy input ~ span span:first-child,
+    .switch-light.switch-candy input:checked ~ span span:nth-child(2),
+    .switch-candy input:checked + label {
+        color: $white;
+        outline: none;
+        text-shadow: unset;
+    }
+    .switch-candy a {
+        border: none;
+        border-radius: 100px;
+        background-color: #2fa1da;
+    }
+    .switch-candy-blue a {
+        background-color: #38a3d4;
+    }
+    .switch-candy-yellow a {
+        background-color: #f5e560;
+    }
+}

@@ -1,0 +1,19 @@
+<form name="formValidator" class="form-validator" novalidate autocomplete="off" ng-submit="formValidator.$valid" data-ng-init="loadData()">
+    <div class="form-group form-validator-group text-center">
+        <div class="form-field-container">
+            <md-input-container class="material-input-container full-width" data-ng-repeat="(formKey, formField) in loginFormBuildInfo">
+                <label class="control-label" data-ng-bind="formField.title"></label>
+                <input type="{{formField.type}}" data-ng-model="formField.formModel" class="form-control" name="name{{$index}}" data-ng-required="formField.required" data-ng-pattern="formField.pattern" ng-maxlength="formField.maxLength">
+            </md-input-container>
+        </div>
+    </div>
+    <div class="text-center">
+        <div class="inactive-button-container" data-ng-class="{'button-container':formValidator.$valid}">
+            <div class="text-binder" data-ng-bind="loginSignIn" data-ng-click="signIn(!formValidator.$valid)"></div>
+        </div>
+    </div>
+    <div class="interactive-container">
+        <div class="forgot-password" data-ng-bind="forgotPasswordDetails.link" data-ng-click="forgotPassword()"></div>
+        <div class="invalid-credentails-container" data-ng-if="wrongCredentials"><span data-ng-bind="wrongCredentials"></span></div>
+    </div>
+</form>

@@ -1,0 +1,105 @@
+.login-page {
+    background: url("../images/background.png") no-repeat fixed;
+    background-size: 100%;
+
+    .login-content-container {
+        z-index: 2;
+        height: 100%;
+        .login-content {
+            .close-login {
+                cursor: pointer;
+                opacity: 0.5;
+                font-size: 14px;
+                margin-right: -15px;
+                margin-top: -15px
+            }
+            z-index: 10;
+            width: 650px;
+            padding: 30px;
+            .login-image-container {
+                .logo-binder {
+                    height: 146px;
+                    width: 180px;
+                    padding: 0px 10px;
+                }
+                .button-container {
+                    cursor: pointer;
+                    width: 120px;
+                    height: 35px;
+                    border-radius: 100px;
+                    margin-left: 28px;
+                    padding-top: 8px;
+                    .role-binder {
+                        color: $white;
+                    }
+                }
+                .employer-button {
+                    background-image: linear-gradient(to bottom, #3dbdb6, #0089ce);
+                }
+                .student-button {
+                    background-image: linear-gradient(to bottom, #b3e090, #77b04b);
+                }
+                .college-button {
+                    background-image: linear-gradient(to top, #ffb347, #ffcc33);
+                }
+            }
+            .login-form-container {
+                .form-validator {
+                    .form-validator-group {
+                        margin-bottom: -10px;
+                        .form-field-container {
+                            border-left: solid 1px #979797;
+                            padding-left: 40px;
+                            .material-input-container {
+                                .control-label {}
+                                .form-control {
+                                    width: 270px;
+                                }
+                            }
+                        }
+                    }
+                    .forgot-password {
+                        cursor: pointer;
+                        color: #4a4a4a;
+                        font-size: 12px;
+                        text-align: right;
+                        margin-right: 35px;
+                        padding-bottom: 10px;
+                        float: right;
+                        width: 49%;
+                    }
+                    .invalid-credentials {
+                        float:left;
+                        font-size: 12px;
+                        margin-left: 45px;
+                        color: red;
+                    }
+                    .button-container {
+                        margin-right: 120px;
+                        margin-left: -110px;
+                    }
+                    .employer-button {
+                        background-image: linear-gradient(to bottom, #3dbdb6, #0089ce);
+                    }
+                    .student-button {
+                        background-image: linear-gradient(to bottom, #b3e090, #77b04b);
+                    }
+                    .college-button {
+                        background-image: linear-gradient(to top, #ffb347, #ffcc33);
+                    }
+                }
+            }
+            .form-loader {
+                .loader-binder {
+                    width: 130px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+.blur-image {
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+}

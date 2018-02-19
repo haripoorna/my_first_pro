@@ -1,0 +1,1924 @@
+
+
+// .btn-primary{
+//     background-color: #2FA1DD;
+// }
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: -22px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.first{
+  float: right;
+    padding-right: 140px;
+    padding-top: 15px;
+     width:280px
+}
+.second{
+   float:right; 
+   width:60px;
+   height:60px
+}
+.third{
+  padding-top: 0px;
+    font-size: 20px;
+    margin: 13PX 13px 0px 13px;
+    color: #fff;
+}
+.fourth{
+  float:right; 
+  padding:0px 10px;
+  color:#fff
+}
+button.btn btn-primary {
+    background-color: blue
+    
+}
+ul li {
+    margin-top: 20px;
+}
+.navbar-default{
+    height:78px;
+    margin: 0px;
+}
+.header-container {
+    height: 80px;
+    background-color: white;
+    .content-container {
+        .logo-container {
+            .logo-binder {
+                padding: 20px;
+                width: 150px;
+            }
+        }
+        .header-controls-container {
+            margin-right: 20px;
+            .tab-container {
+                color: black;
+                font-size: 16px;
+                .inactive-tab {
+                    padding: 29px 20px;
+                    opacity: 0.3;
+                }
+                .active-tab {
+                    opacity: 1;
+                }
+            }
+            .signin-container {
+                width: 129px;
+                height: 38px;
+                border-radius: 4px;
+                background-color: #2fa1da;
+                color: white;
+                .signin {
+                    padding: 9px 40px;
+                }
+                .signout {
+                    padding: 7px 32px;
+                    font-size: 17px;
+                }
+            }
+            .header-menu {
+                font-size: 25px;
+                margin-top: 27px;
+            }
+        }
+    }
+    .header-dropdown {
+        padding: 10px 50px;
+        font-size: 18px;
+        position: absolute;
+        right: 1px;
+        background: white;
+        color: lightBlack !important;
+        border-radius: 10px;
+        z-index: 999;
+        border: 1px solid #e0eaef;
+        .drop-down-caret {
+            top: -32px;
+            position: absolute;
+            font-size: 45px;
+            right: 32px;
+            color: #ccd3d6;
+        }
+        .dropdown-tab {
+            padding: 10px 0px;
+        }
+        .signin-container {
+            font-weight: 500;
+        }
+    }
+}
+
+
+.example-container {
+ height: 638px;
+  width: 100%;
+
+ border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.example-sidenav-content {
+    
+  display: flex;
+  height: 100%;
+ 
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+background-color: #F1F1F1;
+  padding: 20px;
+ width: 395px;
+}
+.closebutton{
+    padding: 5px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    float: right;
+    border: none;
+    color: #999;
+    margin-top: 3px;
+}
+.closebutton:hover{
+    background: blue;
+    color: #fff;
+    
+}
+
+
+
+
+
+.dashboard-content-container {
+    .dashboard-banner {
+        background-color: #2fa1da;
+        height: 80px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        .banner-content-container {
+            height: 100%;
+            .banner-content {
+                font-size: 18px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.13;
+                letter-spacing: normal;
+                color: white;
+                .toggle-container {
+                    padding: 10px;
+                    .switch-toggle.switch-candy,
+                    .switch-light.switch-candy > span {
+                        background-color: transparent;
+                        border-radius: 100px;
+                        width: 100%;
+                        border: solid 1px white !important;
+                        box-shadow: none;
+                        margin: auto;
+                    }
+                    .switch-toggle {
+                        position: relative;
+                        display: block;
+                        padding: 0px !important;
+                    }
+                    .switch-light.switch-candy span span,
+                    .switch-light.switch-candy input:checked ~ span span:first-child,
+                    .switch-toggle.switch-candy label {
+                        color: white;
+                        font-size: 13px;
+                        padding: 5px 20px;
+                        text-align: center;
+                        text-shadow: unset;
+                    }
+                    .switch-light.switch-candy input ~ span span:first-child,
+                    .switch-light.switch-candy input:checked ~ span span:nth-child(2),
+                    .switch-candy input:checked + label {
+                        color: #2fa1da;
+                        outline: none;
+                        text-shadow: unset;
+                        background-color: white;
+                        border-radius: 100px;
+                        display: block;
+                        -webkit-transition: all 0.2s ease-out;
+                        -moz-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-in-out
+                    }
+                    .switch-candy a {
+                        border: none;
+                        border-radius: 100px;
+                        background-color: #2fa1da;
+                    }
+                    .switch-candy-blue a {
+                        background-color: #38a3d4;
+                    }
+                    .switch-candy-yellow a {
+                        background-color: #f5e560;
+                    }
+                }
+                .profile-text {
+                    padding-right: 10px;
+                    font-size: 22px;
+                    text-transform: capitalize;
+                    .profile-role {
+                        text-align: right;
+                        font-size: 14px;
+                    }
+                    .profile-name {
+                        padding-top: 12px;
+                    }
+                }
+                .profile-picture {
+                    img {
+                        height: 59px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.signin-container {
+    width: 100px;
+    height: 46px;
+    border-radius: 4px;
+    background-color: #2fa1da;
+    .add-job {
+        padding: 9px 0px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    .dashboard-content-container {
+        .dashboard-banner {
+            background-size: cover;
+            .banner-content-container {
+                .banner-content {
+                    .toggle-container {
+                        .switch-light.switch-candy span span,
+                        .switch-light.switch-candy input:checked ~ span span:first-child,
+                        .switch-toggle.switch-candy label {
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    .dashboard-content-container {
+        .dashboard-banner {
+            background-size: cover;
+            .banner-content-container {
+                .banner-content {
+                    .toggle-container {
+                        .switch-light.switch-candy span span,
+                        .switch-light.switch-candy input:checked ~ span span:first-child,
+                        .switch-toggle.switch-candy label {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// all css
+
+/* line 1, ../../app/styles/_common.scss */
+body,
+html {
+  font-family: 'Roboto' !important;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* line 8, ../../app/styles/_common.scss */
+*:focus {
+  outline: none !important;
+  border: 0;
+}
+
+/* line 13, ../../app/styles/_common.scss */
+.no-padding {
+  padding: 0px !important;
+}
+
+/* line 17, ../../app/styles/_common.scss */
+.disabled {
+  cursor: not-allowed !important;
+}
+
+/* line 21, ../../app/styles/_common.scss */
+.inline-block {
+  display: inline-block;
+}
+
+/* line 25, ../../app/styles/_common.scss */
+.pointer {
+  cursor: pointer !important;
+}
+
+/* line 29, ../../app/styles/_common.scss */
+.no-pointer {
+  cursor: default;
+}
+
+/* line 33, ../../app/styles/_common.scss */
+.full-page {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* line 39, ../../app/styles/_common.scss */
+.full-height {
+  height: 100%;
+}
+
+/* line 43, ../../app/styles/_common.scss */
+.full-width {
+  width: 100%;
+}
+
+/* line 47, ../../app/styles/_common.scss */
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/* line 51, ../../app/styles/_common.scss */
+.parent-container {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+/* line 55, ../../app/styles/_common.scss */
+.parent-container .child-container {
+  align-self: center;
+  border-radius: 8px;
+}
+
+/* line 61, ../../app/styles/_common.scss */
+.button-container {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 6px;
+  padding: 11px 47px;
+  width: 288px;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid #b1b1b1;
+  color: #b1b1b1;
+}
+
+/* line 73, ../../app/styles/_common.scss */
+.inactive-button-container {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 11px 47px;
+  width: 288px;
+  height: 40px;
+  border-radius: 100px;
+  background-image: none;
+  border: solid 1px #000000;
+  cursor: not-allowed;
+  color: #000000;
+}
+
+/* line 86, ../../app/styles/_common.scss */
+.interactive-container {
+  height: 37px;
+  padding: 14px;
+}
+/* line 89, ../../app/styles/_common.scss */
+.interactive-container .invalid-credentails-container {
+  height: 20px;
+  font-size: 12px;
+  color: #FFFFFF;
+  background-color: #EC5524;
+  text-align: center;
+  border-radius: 100px;
+  padding: 3px;
+  width: 240px;
+  margin: auto;
+}
+/* line 100, ../../app/styles/_common.scss */
+.interactive-container .correct-credentails-container {
+  height: 20px;
+  font-size: 12px;
+  color: #FFFFFF;
+  background-color: #7EBD42;
+  text-align: center;
+  border-radius: 100px;
+  padding: 3px;
+  width: 240px;
+  margin: auto;
+}
+
+/* line 113, ../../app/styles/_common.scss */
+.form-control,
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+/* line 118, ../../app/styles/_common.scss */
+.close-button {
+  font-size: 11px;
+  float: right;
+  margin: -38px -2px;
+  border-radius: 100%;
+  color: #CFCFCF;
+  border: 1px solid #CFCFCF;
+  padding: 12px;
+}
+
+/* line 128, ../../app/styles/_common.scss */
+.close-button:hover {
+  background-color: #2fa1da;
+  color: #FFFFFF;
+  transition: all 250ms ease-in-out;
+}
+
+/* line 138, ../../app/styles/_common.scss */
+.close-button-if-noToggle {
+  margin: 0px;
+}
+
+/* line 143, ../../app/styles/_common.scss */
+.login-image-container img {
+  width: 250px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  /* line 149, ../../app/styles/_common.scss */
+  .button-container {
+    width: 210px;
+  }
+
+  /* line 152, ../../app/styles/_common.scss */
+  .inactive-button-container {
+    width: 210px;
+  }
+}
+/* line 1, ../../app/styles/_header.scss */
+.header-container {
+  height: 80px;
+  background-color: #FFFFFF;
+}
+/* line 6, ../../app/styles/_header.scss */
+.header-container .content-container .logo-container .logo-binder {
+  padding: 20px;
+  width: 150px;
+}
+/* line 11, ../../app/styles/_header.scss */
+.header-container .content-container .header-controls-container {
+  margin-right: 20px;
+}
+/* line 13, ../../app/styles/_header.scss */
+.header-container .content-container .header-controls-container .tab-container {
+  color: #000000;
+  font-size: 16px;
+}
+/* line 16, ../../app/styles/_header.scss */
+.header-container .content-container .header-controls-container .tab-container .inactive-tab {
+  padding: 29px 20px;
+  opacity: 0.3;
+}
+/* line 20, ../../app/styles/_header.scss */
+.header-container .content-container .header-controls-container .tab-container .active-tab {
+  opacity: 1;
+}
+/* line 24, ../../app/styles/_header.scss */
+.header-container .content-container .header-controls-container .signin-container {
+  width: 129px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #2fa1da;
+  color: #FFFFFF;
+}
+/* line 30, ../../app/styles/_header.scss */
+.header-container .content-container .header-controls-container .signin-container .signin {
+  padding: 9px 40px;
+}
+/* line 33, ../../app/styles/_header.scss */
+.header-container .content-container .header-controls-container .signin-container .signout {
+  padding: 7px 32px;
+  font-size: 17px;
+}
+/* line 38, ../../app/styles/_header.scss */
+.header-container .content-container .header-controls-container .header-menu {
+  font-size: 25px;
+  margin-top: 27px;
+}
+/* line 44, ../../app/styles/_header.scss */
+.header-container .header-dropdown {
+  padding: 10px 50px;
+  font-size: 18px;
+  position: absolute;
+  right: 1px;
+  background: #FFFFFF;
+  color: #353535 !important;
+  border-radius: 10px;
+  z-index: 999;
+  border: 1px solid #e0eaef;
+}
+/* line 54, ../../app/styles/_header.scss */
+.header-container .header-dropdown .drop-down-caret {
+  top: -32px;
+  position: absolute;
+  font-size: 45px;
+  right: 32px;
+  color: #ccd3d6;
+}
+/* line 61, ../../app/styles/_header.scss */
+.header-container .header-dropdown .dropdown-tab {
+  padding: 10px 0px;
+}
+/* line 64, ../../app/styles/_header.scss */
+.header-container .header-dropdown .signin-container {
+  font-weight: 500;
+}
+
+/* line 2, ../../app/styles/_home.scss */
+// .home-content-container .home-banner {
+//   background:  url("../../assets/images/banner.png") no-repeat center center fixed;
+// }
+/* line 4, ../../app/styles/_home.scss */
+.home-content-container .home-banner .banner-content-container {
+  height: 100%;
+}
+/* line 6, ../../app/styles/_home.scss */
+.home-content-container .home-banner .banner-content-container .banner-content {
+  padding: 150px 0px;
+  color: #FFFFFF;
+}
+/* line 9, ../../app/styles/_home.scss */
+.home-content-container .home-banner .banner-content-container .banner-content .banner-title {
+  font-size: 60px;
+  font-weight: 300;
+}
+/* line 13, ../../app/styles/_home.scss */
+.home-content-container .home-banner .banner-content-container .banner-content .banner-description {
+  font-size: 18px;
+}
+/* line 18, ../../app/styles/_home.scss */
+.home-content-container .home-banner .banner-content-container .banner-logo-container .banner-logo {
+  width: 489px;
+  margin-bottom: -65px;
+}
+/* line 25, ../../app/styles/_home.scss */
+.home-content-container .customer-support {
+  margin-top: 100px;
+}
+/* line 27, ../../app/styles/_home.scss */
+.home-content-container .customer-support .cs-header {
+  padding-bottom: 10px;
+  font-size: 32px;
+  font-weight: 300;
+  color: #333333;
+}
+/* line 34, ../../app/styles/_home.scss */
+.home-content-container .customer-support .cs-grids .cs-icon-container {
+  padding-top: 20px;
+}
+/* line 36, ../../app/styles/_home.scss */
+.home-content-container .customer-support .cs-grids .cs-icon-container .cs-icon {
+  width: 100px;
+}
+/* line 40, ../../app/styles/_home.scss */
+.home-content-container .customer-support .cs-grids .cs-title {
+  padding: 10px;
+  color: #333333;
+  font-size: 16px;
+}
+/* line 45, ../../app/styles/_home.scss */
+.home-content-container .customer-support .cs-grids .cs-description {
+  padding: 5px;
+  font-size: 16px;
+  color: #72808E;
+}
+/* line 50, ../../app/styles/_home.scss */
+.home-content-container .customer-support .cs-grids .cs-link {
+  padding: 2px;
+  font-size: 14px;
+  color: #2D8CFF;
+}
+/* line 57, ../../app/styles/_home.scss */
+.home-content-container .quote-container {
+  margin-top: 50px;
+  padding: 80px 0px;
+  background-color: #7EBD42;
+  color: #FFFFFF;
+}
+/* line 62, ../../app/styles/_home.scss */
+.home-content-container .quote-container .quote-binder {
+  font-size: 20px;
+  font-weight: 300;
+}
+/* line 66, ../../app/styles/_home.scss */
+.home-content-container .quote-container .quote-author {
+  padding-right: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 73, ../../app/styles/_home.scss */
+.home-content-container .company-logo-container {
+  padding: 20px;
+}
+/* line 75, ../../app/styles/_home.scss */
+.home-content-container .company-logo-container .company-logo {
+  padding: 10px;
+  width: 250px;
+}
+
+/* line 1, ../../app/styles/_footer.scss */
+.footer-container {
+  background-color: #1F2532;
+  padding: 60px;
+}
+/* line 4, ../../app/styles/_footer.scss */
+.footer-container .footer-content-container {
+  text-align: left;
+  color: #72808E;
+}
+/* line 7, ../../app/styles/_footer.scss */
+.footer-container .footer-content-container a {
+  text-decoration: none;
+  color: #72808E;
+}
+/* line 11, ../../app/styles/_footer.scss */
+.footer-container .footer-content-container .companyLogo {
+  width: 170px;
+}
+/* line 14, ../../app/styles/_footer.scss */
+.footer-container .footer-content-container .cs-footer-links-header {
+  padding: 8px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+/* line 19, ../../app/styles/_footer.scss */
+.footer-container .footer-content-container .cs-footer-links {
+  padding: 8px;
+  text-decoration: none;
+  color: #72808E;
+}
+/* line 24, ../../app/styles/_footer.scss */
+.footer-container .footer-content-container .cs-footer-links:hover {
+  text-decoration: none;
+}
+/* line 27, ../../app/styles/_footer.scss */
+.footer-container .footer-content-container .social-links {
+  text-align: left;
+  padding: 0px !important;
+}
+/* line 30, ../../app/styles/_footer.scss */
+.footer-container .footer-content-container .social-links li {
+  padding-left: 8px;
+}
+
+/* line 1, ../../app/styles/_login.scss */
+md-backdrop {
+  position: fixed !important;
+}
+
+/* line 5, ../../app/styles/_login.scss */
+.sidenav-container {
+  width: 400px !important;
+  background-color: #F1F1F1;
+  position: fixed !important;
+}
+/* line 10, ../../app/styles/_login.scss */
+.sidenav-container .silder-container .slider-header {
+  padding: 20px;
+}
+/* line 13, ../../app/styles/_login.scss */
+.sidenav-container .silder-container .slider-header-if-noToggle {
+  padding: 9px;
+}
+/* line 16, ../../app/styles/_login.scss */
+.sidenav-container .silder-container .slider-body {
+  height: calc(100% - 100px);
+}
+/* line 19, ../../app/styles/_login.scss */
+.sidenav-container .silder-container .slider-body .login-container md-content {
+  background-color: #F1F1F1 !important;
+}
+/* line 22, ../../app/styles/_login.scss */
+.sidenav-container .silder-container .slider-body .login-container .slider-content {
+  color: #353535;
+  text-align: center;
+}
+/* line 25, ../../app/styles/_login.scss */
+.sidenav-container .silder-container .slider-body .login-container .slider-content p {
+  font-size: 18px;
+}
+/* line 31, ../../app/styles/_login.scss */
+.sidenav-container .silder-container .slider-body .login-container .login-form-container .form-validator .form-validator-group {
+  margin-bottom: -10px;
+}
+/* line 34, ../../app/styles/_login.scss */
+.sidenav-container .silder-container .slider-body .login-container .login-form-container .form-validator .form-validator-group .form-field-container .material-input-container {
+  margin: 6px 0;
+}
+/* line 36, ../../app/styles/_login.scss */
+.sidenav-container .silder-container .slider-body .login-container .login-form-container .form-validator .form-validator-group .form-field-container .material-input-container .control-label {
+  text-align: left;
+}
+/* line 39, ../../app/styles/_login.scss */
+.sidenav-container .silder-container .slider-body .login-container .login-form-container .form-validator .form-validator-group .form-field-container .material-input-container .form-control {
+  width: 100%;
+}
+/* line 43, ../../app/styles/_login.scss */
+.sidenav-container .silder-container .slider-body .login-container .login-form-container .form-validator .form-validator-group .form-field-container .full-width {
+  width: 300px;
+}
+/* line 48, ../../app/styles/_login.scss */
+.sidenav-container .silder-container .slider-body .login-container .login-form-container .form-validator .interactive-container {
+  height: 60px;
+}
+/* line 50, ../../app/styles/_login.scss */
+.sidenav-container .silder-container .slider-body .login-container .login-form-container .form-validator .interactive-container .forgot-password {
+  cursor: pointer;
+  color: #4A4A4A;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0px;
+}
+/* line 57, ../../app/styles/_login.scss */
+.sidenav-container .silder-container .slider-body .login-container .login-form-container .form-validator .interactive-container .invalid-credentails-container {
+  height: 20px;
+  font-size: 12px;
+  color: #FFFFFF;
+  background-color: #EC5524;
+  text-align: center;
+  border-radius: 100px;
+  padding: 3px;
+  width: 240px;
+  margin: auto;
+}
+/* line 69, ../../app/styles/_login.scss */
+.sidenav-container .silder-container .slider-body .login-container .login-form-container .form-validator .button-container {
+  color: #FFFFFF;
+  font-size: 15px;
+  background-image: linear-gradient(to bottom, #3dbdb6, #0089ce);
+  border: none;
+}
+/* line 74, ../../app/styles/_login.scss */
+.sidenav-container .silder-container .slider-body .login-container .login-form-container .form-validator .button-container .role-binder {
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  /* line 90, ../../app/styles/_login.scss */
+  .form-validator .form-validator-group .form-field-container .material-input-container .control-label {
+    text-align: left;
+  }
+  /* line 94, ../../app/styles/_login.scss */
+  .form-validator .form-validator-group .form-field-container .full-width {
+    width: 220px;
+  }
+  /* line 99, ../../app/styles/_login.scss */
+  .form-validator .interactive-container {
+    height: 30px;
+  }
+  /* line 101, ../../app/styles/_login.scss */
+  .form-validator .interactive-container .invalid-credentails-container {
+    width: 210px;
+  }
+}
+/* line 2, ../../app/styles/_toggle-switch.scss */
+.toggle-container .switch-toggle.switch-candy,
+.toggle-container .switch-light.switch-candy > span {
+  background-color: #F1F1F1;
+  border-radius: 100px;
+  width: 65%;
+  border: solid 1px #CFCFCF !important;
+  box-shadow: none;
+  margin: auto;
+}
+/* line 11, ../../app/styles/_toggle-switch.scss */
+.toggle-container .switch-toggle {
+  position: relative;
+  display: block;
+  padding: 5px !important;
+}
+/* line 16, ../../app/styles/_toggle-switch.scss */
+.toggle-container .switch-light.switch-candy span span,
+.toggle-container .switch-light.switch-candy input:checked ~ span span:first-child,
+.toggle-container .switch-toggle.switch-candy label {
+  color: #b1b1b1;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: unset;
+}
+/* line 24, ../../app/styles/_toggle-switch.scss */
+.toggle-container .switch-light.switch-candy input ~ span span:first-child,
+.toggle-container .switch-light.switch-candy input:checked ~ span span:nth-child(2),
+.toggle-container .switch-candy input:checked + label {
+  color: #FFFFFF;
+  outline: none;
+  text-shadow: unset;
+}
+/* line 31, ../../app/styles/_toggle-switch.scss */
+.toggle-container .switch-candy a {
+  border: none;
+  border-radius: 100px;
+  background-color: #2fa1da;
+}
+/* line 36, ../../app/styles/_toggle-switch.scss */
+.toggle-container .switch-candy-blue a {
+  background-color: #38a3d4;
+}
+/* line 39, ../../app/styles/_toggle-switch.scss */
+.toggle-container .switch-candy-yellow a {
+  background-color: #f5e560;
+}
+
+/* line 1, ../../app/styles/_forgot-password.scss */
+.forgotPassword-container {
+  padding: 10px;
+}
+/* line 3, ../../app/styles/_forgot-password.scss */
+.forgotPassword-container md-content {
+  background-color: #F1F1F1 !important;
+}
+/* line 6, ../../app/styles/_forgot-password.scss */
+.forgotPassword-container .slider-content {
+  color: #353535;
+  text-align: center;
+}
+/* line 9, ../../app/styles/_forgot-password.scss */
+.forgotPassword-container .slider-content p {
+  font-size: 18px;
+}
+/* line 15, ../../app/styles/_forgot-password.scss */
+.forgotPassword-container .login-form-container .form-validator .form-validator-group {
+  margin-bottom: -10px;
+}
+/* line 19, ../../app/styles/_forgot-password.scss */
+.forgotPassword-container .login-form-container .form-validator .form-validator-group .form-field-container .material-input-container .control-label {
+  text-align: left;
+}
+/* line 22, ../../app/styles/_forgot-password.scss */
+.forgotPassword-container .login-form-container .form-validator .form-validator-group .form-field-container .material-input-container .form-control {
+  width: 298px;
+}
+/* line 28, ../../app/styles/_forgot-password.scss */
+.forgotPassword-container .login-form-container .form-validator .button-container {
+  color: #FFFFFF;
+  font-size: 15px;
+  background-image: linear-gradient(to bottom, #3dbdb6, #0089ce);
+  border: none;
+}
+/* line 33, ../../app/styles/_forgot-password.scss */
+.forgotPassword-container .login-form-container .form-validator .button-container .role-binder {
+  color: #FFFFFF;
+}
+/* line 40, ../../app/styles/_forgot-password.scss */
+.forgotPassword-container .login-image-container img {
+  width: 212px;
+}
+
+/* line 2, ../../app/styles/_registration.scss */
+.registration-container md-content {
+  background-color: #F1F1F1 !important;
+}
+/* line 5, ../../app/styles/_registration.scss */
+.registration-container .slider-content {
+  color: #353535;
+  text-align: center;
+}
+/* line 8, ../../app/styles/_registration.scss */
+.registration-container .slider-content p {
+  font-size: 18px;
+}
+/* line 12, ../../app/styles/_registration.scss */
+.registration-container .navigation-container {
+  color: #484848;
+  font-size: 18px;
+  padding: 0px 20px;
+}
+/* line 16, ../../app/styles/_registration.scss */
+.registration-container .navigation-container .navigator {
+  opacity: 0.5;
+  cursor: pointer;
+  font-size: 40px;
+}
+/* line 22, ../../app/styles/_registration.scss */
+.registration-container .left-navigator {
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 100%;
+  background-color: #2fa1da;
+  color: #FFFFFF;
+  padding: 11px;
+  width: 37px;
+  text-align: center;
+  height: 37px;
+  position: absolute;
+  top: 22px;
+  left: 18px;
+}
+/* line 36, ../../app/styles/_registration.scss */
+.registration-container .disabled-left-navigator {
+  cursor: not-allowed !important;
+  color: #C1C1C1;
+  border: 1px solid #C1C1C1;
+  background-color: transparent;
+}
+/* line 43, ../../app/styles/_registration.scss */
+.registration-container .form-validator .form-validator-group {
+  margin-bottom: -10px;
+}
+/* line 46, ../../app/styles/_registration.scss */
+.registration-container .form-validator .form-validator-group .form-field-container .material-input-container {
+  margin: 12px 23px !important;
+}
+/* line 48, ../../app/styles/_registration.scss */
+.registration-container .form-validator .form-validator-group .form-field-container .material-input-container .control-label {
+  text-align: left;
+  font-size: 14px;
+}
+/* line 52, ../../app/styles/_registration.scss */
+.registration-container .form-validator .form-validator-group .form-field-container .material-input-container .form-control {
+  width: 100%;
+}
+/* line 56, ../../app/styles/_registration.scss */
+.registration-container .form-validator .form-validator-group .form-field-container .material-input-container .material-select-container md-content {
+  z-index: 9999;
+}
+/* line 61, ../../app/styles/_registration.scss */
+.registration-container .form-validator .form-validator-group .form-field-container .half-width {
+  width: 127px;
+}
+/* line 64, ../../app/styles/_registration.scss */
+.registration-container .form-validator .form-validator-group .form-field-container .full-width {
+  width: 300px;
+}
+/* line 69, ../../app/styles/_registration.scss */
+.registration-container .form-validator .interactive-container {
+  height: 20px;
+  margin-top: 10px;
+}
+/* line 72, ../../app/styles/_registration.scss */
+.registration-container .form-validator .interactive-container .invalid-credentails-container {
+  height: 20px;
+  font-size: 12px;
+  color: #FFFFFF;
+  background-color: #EC5524;
+  text-align: center;
+  border-radius: 100px;
+  padding: 3px;
+  width: 240px;
+  margin: auto;
+  margin-top: 10px;
+}
+/* line 85, ../../app/styles/_registration.scss */
+.registration-container .form-validator .button-container {
+  color: #FFFFFF;
+  font-size: 15px;
+  background-image: linear-gradient(to bottom, #3dbdb6, #0089ce);
+  border: none;
+  margin: 0px !important;
+}
+/* line 91, ../../app/styles/_registration.scss */
+.registration-container .form-validator .button-container .role-binder {
+  color: #FFFFFF;
+}
+/* line 95, ../../app/styles/_registration.scss */
+.registration-container .form-validator .navigator {
+  background-color: #2fa1da;
+  cursor: pointer;
+  font-size: 17px;
+  color: #FFFFFF;
+  border-radius: 100%;
+  width: 39px;
+  height: 39px;
+  padding: 11px;
+  margin: auto !important;
+  text-align: center;
+}
+/* line 107, ../../app/styles/_registration.scss */
+.registration-container .form-validator .disableRightNavigator {
+  color: #C1C1C1;
+  border: 1px solid #C1C1C1;
+  background-color: transparent;
+}
+/* line 114, ../../app/styles/_registration.scss */
+.registration-container .login-form-container .button-container {
+  margin: 15px 0px;
+}
+/* line 117, ../../app/styles/_registration.scss */
+.registration-container .login-form-container .button-container:hover {
+  background-color: #2fa1da;
+  color: #FFFFFF;
+  transition: all 250ms ease-in-out;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  /* line 135, ../../app/styles/_registration.scss */
+  .registration-container .form-validator .form-validator-group .form-field-container .material-input-container .form-control {
+    width: 100%;
+  }
+  /* line 139, ../../app/styles/_registration.scss */
+  .registration-container .form-validator .form-validator-group .form-field-container .half-width {
+    width: 88px;
+  }
+  /* line 142, ../../app/styles/_registration.scss */
+  .registration-container .form-validator .form-validator-group .form-field-container .full-width {
+    width: 220px;
+  }
+  /* line 147, ../../app/styles/_registration.scss */
+  .registration-container .form-validator .interactive-container {
+    height: 20px;
+    margin-top: 10px;
+  }
+  /* line 150, ../../app/styles/_registration.scss */
+  .registration-container .form-validator .interactive-container .invalid-credentails-container {
+    width: 140px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 480px) {
+  /* line 163, ../../app/styles/_registration.scss */
+  .registration-container .form-validator .form-validator-group .form-field-container .half-width {
+    width: 115px;
+  }
+  /* line 166, ../../app/styles/_registration.scss */
+  .registration-container .form-validator .form-validator-group .form-field-container .full-width {
+    width: 276px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  /* line 180, ../../app/styles/_registration.scss */
+  .registration-container .form-validator .form-validator-group .form-field-container .half-width {
+    width: 90px;
+  }
+  /* line 183, ../../app/styles/_registration.scss */
+  .registration-container .form-validator .form-validator-group .form-field-container .full-width {
+    width: 230px;
+  }
+}
+/* line 1, ../../app/styles/_set-password.scss */
+.setPassword-page {
+  height: calc(100% - 80px);
+  background: #FFFFFF;
+}
+
+/* line 6, ../../app/styles/_set-password.scss */
+.setPassword-content-container {
+  height: 100%;
+  box-shadow: 1px 0 0 4px #dcdcdc;
+}
+/* line 9, ../../app/styles/_set-password.scss */
+.setPassword-content-container .child-container {
+  z-index: 10;
+}
+/* line 12, ../../app/styles/_set-password.scss */
+.setPassword-content-container .setPassword-content {
+  width: 650px;
+  box-shadow: 0 4px 1px 0 #dcdcdc;
+  padding: 20px;
+}
+/* line 17, ../../app/styles/_set-password.scss */
+.setPassword-content-container .setPassword-content .modal-title p {
+  font-size: 18px;
+}
+/* line 23, ../../app/styles/_set-password.scss */
+.setPassword-content-container .setPassword-content .form-container .form-validator .form-validator-group {
+  margin-bottom: -10px;
+}
+/* line 26, ../../app/styles/_set-password.scss */
+.setPassword-content-container .setPassword-content .form-container .form-validator .form-validator-group .form-field-container .material-input-container {
+  margin: 18px 0px;
+}
+/* line 28, ../../app/styles/_set-password.scss */
+.setPassword-content-container .setPassword-content .form-container .form-validator .form-validator-group .form-field-container .material-input-container .control-label {
+  text-align: left;
+}
+/* line 31, ../../app/styles/_set-password.scss */
+.setPassword-content-container .setPassword-content .form-container .form-validator .form-validator-group .form-field-container .material-input-container .form-control {
+  width: 288px;
+}
+/* line 35, ../../app/styles/_set-password.scss */
+.setPassword-content-container .setPassword-content .form-container .form-validator .form-validator-group .form-field-container .margin-right {
+  margin-right: 18px;
+}
+/* line 41, ../../app/styles/_set-password.scss */
+.setPassword-content-container .setPassword-content .form-container .form-validator .interactive-container .invalid-credentails-container {
+  height: 20px;
+  font-size: 12px;
+  color: #FFFFFF;
+  background-color: #EC5524;
+  text-align: center;
+  border-radius: 100px;
+  padding: 3px;
+  width: 240px;
+  margin: 10px auto;
+}
+/* line 53, ../../app/styles/_set-password.scss */
+.setPassword-content-container .setPassword-content .form-container .form-validator .button-container {
+  color: #FFFFFF;
+  font-size: 15px;
+  background-image: linear-gradient(to bottom, #3dbdb6, #0089ce);
+  border: none;
+}
+/* line 58, ../../app/styles/_set-password.scss */
+.setPassword-content-container .setPassword-content .form-container .form-validator .button-container .role-binder {
+  color: #FFFFFF;
+}
+/* line 65, ../../app/styles/_set-password.scss */
+.setPassword-content-container .modal-description {
+  padding: 30px;
+  font-size: 24px;
+  font-weight: 300;
+}
+/* line 70, ../../app/styles/_set-password.scss */
+.setPassword-content-container .login-image-container {
+  position: fixed;
+  opacity: 0.4;
+  bottom: 0px;
+  right: 0px;
+}
+/* line 75, ../../app/styles/_set-password.scss */
+.setPassword-content-container .login-image-container img {
+  width: 100%;
+  z-index: 0;
+}
+
+/* line 2, ../../app/styles/_dashboard.scss */
+.dashboard-content-container .dashboard-banner {
+  background-color: #2fa1da;
+  height: 80px;
+  background-size: cover;
+}
+/* line 9, ../../app/styles/_dashboard.scss */
+.dashboard-content-container .dashboard-banner .banner-content-container {
+  height: 100%;
+}
+/* line 11, ../../app/styles/_dashboard.scss */
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  color: #FFFFFF;
+}
+/* line 19, ../../app/styles/_dashboard.scss */
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container {
+  padding: 10px;
+}
+/* line 21, ../../app/styles/_dashboard.scss */
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-toggle.switch-candy,
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-light.switch-candy > span {
+  background-color: transparent;
+  border-radius: 100px;
+  width: 100%;
+  border: solid 1px #FFFFFF !important;
+  box-shadow: none;
+  margin: auto;
+}
+/* line 30, ../../app/styles/_dashboard.scss */
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-toggle {
+  position: relative;
+  display: block;
+  padding: 0px !important;
+}
+/* line 35, ../../app/styles/_dashboard.scss */
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-light.switch-candy span span,
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-light.switch-candy input:checked ~ span span:first-child,
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-toggle.switch-candy label {
+  color: #FFFFFF;
+  font-size: 13px;
+  padding: 5px 20px;
+  text-align: center;
+  text-shadow: unset;
+}
+/* line 44, ../../app/styles/_dashboard.scss */
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-light.switch-candy input ~ span span:first-child,
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-light.switch-candy input:checked ~ span span:nth-child(2),
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-candy input:checked + label {
+  color: #2fa1da;
+  outline: none;
+  text-shadow: unset;
+  background-color: white;
+  border-radius: 100px;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+/* line 57, ../../app/styles/_dashboard.scss */
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-candy a {
+  border: none;
+  border-radius: 100px;
+  background-color: #2fa1da;
+}
+/* line 62, ../../app/styles/_dashboard.scss */
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-candy-blue a {
+  background-color: #38a3d4;
+}
+/* line 65, ../../app/styles/_dashboard.scss */
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-candy-yellow a {
+  background-color: #f5e560;
+}
+/* line 69, ../../app/styles/_dashboard.scss */
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .profile-text {
+  padding-right: 10px;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+/* line 73, ../../app/styles/_dashboard.scss */
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .profile-text .profile-role {
+  text-align: right;
+  font-size: 14px;
+}
+/* line 77, ../../app/styles/_dashboard.scss */
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .profile-text .profile-name {
+  padding-top: 12px;
+}
+/* line 82, ../../app/styles/_dashboard.scss */
+.dashboard-content-container .dashboard-banner .banner-content-container .banner-content .profile-picture img {
+  height: 59px;
+}
+
+/* line 91, ../../app/styles/_dashboard.scss */
+.signin-container {
+  width: 100px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: #2fa1da;
+}
+/* line 96, ../../app/styles/_dashboard.scss */
+.signin-container .add-job {
+  padding: 9px 0px;
+  font-size: 17px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  /* line 104, ../../app/styles/_dashboard.scss */
+  .dashboard-content-container .dashboard-banner {
+    background-size: cover;
+  }
+  /* line 109, ../../app/styles/_dashboard.scss */
+  .dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-light.switch-candy span span,
+  .dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-light.switch-candy input:checked ~ span span:first-child,
+  .dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-toggle.switch-candy label {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  /* line 123, ../../app/styles/_dashboard.scss */
+  .dashboard-content-container .dashboard-banner {
+    background-size: cover;
+  }
+  /* line 128, ../../app/styles/_dashboard.scss */
+  .dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-light.switch-candy span span,
+  .dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-light.switch-candy input:checked ~ span span:first-child,
+  .dashboard-content-container .dashboard-banner .banner-content-container .banner-content .toggle-container .switch-toggle.switch-candy label {
+    font-size: 10px;
+  }
+}
+/* line 3, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-header .close-button {
+  font-size: 11px;
+  float: right;
+  border-radius: 100%;
+  color: #CFCFCF;
+  border: 1px solid #CFCFCF;
+  padding: 9px;
+  margin-right: 17px;
+}
+/* line 12, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-header p {
+  font-size: 17px;
+  text-align: center;
+}
+/* line 17, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-body {
+  height: calc(100% - 100px);
+}
+/* line 19, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-body md-content {
+  background-color: #F1F1F1 !important;
+}
+/* line 22, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-body .slider-content {
+  color: #353535;
+  text-align: center;
+}
+/* line 25, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-body .slider-content p {
+  font-size: 18px;
+}
+/* line 31, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-body .login-form-container .form-validator .form-validator-group {
+  margin-bottom: -10px;
+}
+/* line 34, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-body .login-form-container .form-validator .form-validator-group .form-field-container .material-input-container {
+  margin: 15px 23px !important;
+}
+/* line 36, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-body .login-form-container .form-validator .form-validator-group .form-field-container .material-input-container .control-label {
+  text-align: left;
+}
+/* line 39, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-body .login-form-container .form-validator .form-validator-group .form-field-container .material-input-container .form-control {
+  width: 100%;
+}
+/* line 43, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-body .login-form-container .form-validator .form-validator-group .form-field-container .material-select-container {
+  margin: 12px 25px 23px !important;
+}
+/* line 45, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-body .login-form-container .form-validator .form-validator-group .form-field-container .material-select-container .control-label {
+  text-align: left;
+}
+/* line 48, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-body .login-form-container .form-validator .form-validator-group .form-field-container .material-select-container .form-control {
+  width: 100%;
+}
+/* line 52, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-body .login-form-container .form-validator .form-validator-group .form-field-container .half-width {
+  width: 127px;
+}
+/* line 55, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-body .login-form-container .form-validator .form-validator-group .form-field-container .full-width {
+  width: 300px;
+}
+/* line 60, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-body .login-form-container .form-validator .button-container {
+  color: #FFFFFF;
+  font-size: 15px;
+  background-image: linear-gradient(to bottom, #3dbdb6, #0089ce);
+  border: none;
+}
+/* line 65, ../../app/styles/_add-job-form.scss */
+.dashboard-slider-container .slider-body .login-form-container .form-validator .button-container .role-binder {
+  color: #FFFFFF;
+}
+
+/* line 1, ../../app/styles/_table.scss */
+.dashboard-table-container {
+  padding-left: 5%;
+}
+/* line 3, ../../app/styles/_table.scss */
+.dashboard-table-container .content-container {
+  padding: 25px;
+  width: 90%;
+  position: absolute;
+  background-color: #fff;
+}
+/* line 9, ../../app/styles/_table.scss */
+.dashboard-table-container .content-container .filter-pane h4 {
+  color: #2fa1da;
+}
+/* line 14, ../../app/styles/_table.scss */
+.dashboard-table-container .content-container .filter-pane .departments .branch-filter-container {
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #9b9b9b;
+  color: #2fa1da;
+  margin: 10px;
+}
+/* line 20, ../../app/styles/_table.scss */
+.dashboard-table-container .content-container .filter-pane .departments .branch-filter-container .branch-filter-content {
+  padding: 4px 17px;
+  font-size: 16px;
+}
+/* line 24, ../../app/styles/_table.scss */
+.dashboard-table-container .content-container .filter-pane .departments .branch-filter-container .branch-filter-container-isChecked {
+  border-radius: 4px;
+  background-color: #2fa1da;
+  color: #FFFFFF;
+  border: 1px solid #2fa1da;
+}
+/* line 34, ../../app/styles/_table.scss */
+.dashboard-table-container .content-container .table-holder {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* line 41, ../../app/styles/_table.scss */
+.status-button-container {
+  border-radius: 4px;
+  background-color: #2fa1da;
+  color: #FFFFFF;
+}
+/* line 45, ../../app/styles/_table.scss */
+.status-button-container .status {
+  padding: 4px 17px;
+  font-size: 12px;
+}
+
+/* line 51, ../../app/styles/_table.scss */
+.info {
+  color: #2fa1da;
+  border: 1px solid #2fa1da;
+  padding: 5px 8px;
+  border-radius: 100%;
+  font-size: 10px;
+}
+
+/* line 59, ../../app/styles/_table.scss */
+.table-container {
+  text-align: center;
+}
+/* line 61, ../../app/styles/_table.scss */
+.table-container thead > tr > th {
+  text-align: center;
+}
+/* line 64, ../../app/styles/_table.scss */
+.table-container thead {
+  background-color: #f6f9fa;
+}
+/* line 67, ../../app/styles/_table.scss */
+.table-container .table {
+  text-transform: capitalize;
+}
+/* line 70, ../../app/styles/_table.scss */
+.table-container .add-job {
+  padding: 12px 17px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+/* line 76, ../../app/styles/_table.scss */
+.table-container .form-group .form-control {
+  font-size: 14px;
+  display: inline-block !important;
+  width: 73% !important;
+  margin-right: 20px;
+}
+/* line 82, ../../app/styles/_table.scss */
+.table-container .form-group .share-icon {
+  font-size: 20px;
+  padding: 12px;
+  border: 1px solid #CCC;
+  border-radius: 50%;
+}
+/* line 88, ../../app/styles/_table.scss */
+.table-container .form-group .share-icon-pointer {
+  background-color: #30a1da;
+  color: #FFFFFF;
+  border: 1px solid #30a1da;
+  cursor: pointer;
+}
+/* line 94, ../../app/styles/_table.scss */
+.table-container .form-group .share-icon-disabled {
+  cursor: not-allowed;
+}
+/* line 98, ../../app/styles/_table.scss */
+.table-container .application-container {
+  padding: 20px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+/* line 102, ../../app/styles/_table.scss */
+.table-container .application-container .application-content-container {
+  height: 250px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+  min-height: 240px;
+  overflow-y: auto;
+}
+/* line 110, ../../app/styles/_table.scss */
+.table-container .application-container .application-content-container .application-title {
+  font-weight: bold;
+  color: #4A4A4A;
+}
+/* line 114, ../../app/styles/_table.scss */
+.table-container .application-container .application-content-container .application-value-title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 0.91;
+  color: #2fa1da;
+  padding: 2px 0px 5px 0px;
+}
+/* line 121, ../../app/styles/_table.scss */
+.table-container .application-container .application-content-container .skill-values {
+  height: 100px;
+  overflow-y: auto;
+}
+/* line 124, ../../app/styles/_table.scss */
+.table-container .application-container .application-content-container .skill-values .application-value {
+  margin-left: 40px;
+  display: list-item;
+  font-size: 14px;
+  font-weight: bold;
+  color: #9b9b9b;
+}
+/* line 132, ../../app/styles/_table.scss */
+.table-container .application-container .application-content-container .info-check {
+  display: block;
+  position: absolute;
+  bottom: 24px;
+  right: 29px;
+}
+/* line 138, ../../app/styles/_table.scss */
+.table-container .application-container .application-content-container .info-selected {
+  color: #30a1da;
+}
+/* line 142, ../../app/styles/_table.scss */
+.table-container .application-container .application-selected {
+  background-color: #2fa1da;
+  opacity: 0.8;
+}
+/* line 145, ../../app/styles/_table.scss */
+.table-container .application-container .application-selected .application-title {
+  opacity: 0.5;
+}
+/* line 148, ../../app/styles/_table.scss */
+.table-container .application-container .application-selected .application-value-title {
+  opacity: 0.5;
+  color: #FFFFFF;
+}
+/* line 152, ../../app/styles/_table.scss */
+.table-container .application-container .application-selected .application-value {
+  opacity: 0.5;
+  color: #FFFFFF;
+}
+/* line 156, ../../app/styles/_table.scss */
+.table-container .application-container .application-selected .info-check {
+  opacity: 0.5;
+}
+/* line 159, ../../app/styles/_table.scss */
+.table-container .application-container .application-selected .info-selected {
+  color: #FFFFFF;
+}
+
+/* line 166, ../../app/styles/_table.scss */
+.college-select-container {
+  padding: 55px 20px 0px 0px;
+}
+/* line 168, ../../app/styles/_table.scss */
+.college-select-container .share-title {
+  font-size: 28px;
+  left: 103px;
+  position: absolute;
+  top: 15px;
+}
+/* line 174, ../../app/styles/_table.scss */
+.college-select-container .share-header {
+  padding: 40px 20px 40px 40px;
+  font-size: 20px;
+  font-weight: 300;
+}
+/* line 179, ../../app/styles/_table.scss */
+.college-select-container .share-search {
+  margin-left: 22px;
+  width: 360px;
+}
+/* line 183, ../../app/styles/_table.scss */
+.college-select-container .colleges-container {
+  padding-left: 22px;
+  overflow-y: auto;
+  max-height: 375px;
+}
+/* line 187, ../../app/styles/_table.scss */
+.college-select-container .colleges-container .college-content {
+  font-size: 18px;
+  text-align: left;
+  padding: 10px;
+  background: #FFFFFF;
+}
+/* line 193, ../../app/styles/_table.scss */
+.college-select-container .colleges-container .college-checkbox {
+  vertical-align: sub;
+  font-size: 27px;
+  padding-left: 7px;
+  opacity: 0.5;
+}
+/* line 199, ../../app/styles/_table.scss */
+.college-select-container .colleges-container .checked {
+  color: #30a1da;
+  opacity: 1;
+}
+/* line 204, ../../app/styles/_table.scss */
+.college-select-container .submit-button-container {
+  padding-top: 20px;
+}
+/* line 206, ../../app/styles/_table.scss */
+.college-select-container .submit-button-container .active-submit {
+  cursor: pointer !important;
+  border: 1px solid #30a1da;
+  background-color: #30a1da;
+  color: #FFFFFF;
+}
+/* line 213, ../../app/styles/_table.scss */
+.college-select-container .job-description-container {
+  padding: 0px 50px;
+  text-transform: capitalize;
+}
+/* line 216, ../../app/styles/_table.scss */
+.college-select-container .job-description-container .job-description-content {
+  padding-bottom: 20px;
+}
+/* line 218, ../../app/styles/_table.scss */
+.college-select-container .job-description-container .job-description-content .job-description-title {
+  font-size: 12px;
+  color: #CFCFCF;
+  padding-bottom: 5px;
+}
+/* line 223, ../../app/styles/_table.scss */
+.college-select-container .job-description-container .job-description-content .job-description-data {
+  font-size: 20px;
+  color: #2fa1da;
+}
+/* line 228, ../../app/styles/_table.scss */
+.college-select-container .job-description-container .job-description-fields {
+  padding-bottom: 0px;
+}
+
+/* line 2, ../../app/styles/_editProfile.scss */
+.editProfile-container .close-editProfile {
+  font-size: 11px;
+  float: right;
+  position: absolute;
+  top: 22px;
+  right: 10px;
+  border-radius: 100%;
+  color: #CFCFCF;
+  border: 1px solid #CFCFCF;
+  padding: 12px;
+}
+/* line 13, ../../app/styles/_editProfile.scss */
+.editProfile-container .close-editProfile:hover {
+  background-color: #2fa1da;
+  color: #FFFFFF;
+  transition: all 250ms ease-in-out;
+}
+/* line 22, ../../app/styles/_editProfile.scss */
+.editProfile-container .profile-image-container {
+  height: 160px;
+  width: 160px;
+  margin: auto;
+}
+/* line 26, ../../app/styles/_editProfile.scss */
+.editProfile-container .profile-image-container img {
+  height: 160px;
+  width: 160px;
+  border-radius: 100%;
+  margin: auto;
+  cursor: pointer;
+  border: 1px solid #2fa1da;
+}
+/* line 35, ../../app/styles/_editProfile.scss */
+.editProfile-container .username-header {
+  color: #2fa1da;
+}
+
+/* line 42, ../../app/styles/_editProfile.scss */
+.modal-backdrop.in {
+  opacity: 0 !important;
+  display: none;
+}
+
+/* line 47, ../../app/styles/_editProfile.scss */
+.cropArea {
+  background: #E4E4E4;
+  overflow: hidden;
+  width: 300px;
+  height: 150px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 56, ../../app/styles/_editProfile.scss */
+  .modal-dialog {
+    width: 100% !important;
+    margin: 30px auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
+
+// .btn-primary{
+//     background-color: #2FA1DD;
+// }
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: -22px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+button.btn btn-primary {
+    background-color: blue
+    
+}
+ul li {
+    margin-top: 20px;
+}
+.navbar-default{
+    height:78px;
+    margin: 0px;
+}
+.header-container {
+    height: 80px;
+    background-color: white;
+    .content-container {
+        .logo-container {
+            .logo-binder {
+                padding: 20px;
+                width: 150px;
+            }
+        }
+        .header-controls-container {
+            margin-right: 20px;
+            .tab-container {
+                color: black;
+                font-size: 16px;
+                .inactive-tab {
+                    padding: 29px 20px;
+                    opacity: 0.3;
+                }
+                .active-tab {
+                    opacity: 1;
+                }
+            }
+            .signin-container {
+                width: 129px;
+                height: 38px;
+                border-radius: 4px;
+                background-color: #2fa1da;
+                color: white;
+                .signin {
+                    padding: 9px 40px;
+                }
+                .signout {
+                    padding: 7px 32px;
+                    font-size: 17px;
+                }
+            }
+            .header-menu {
+                font-size: 25px;
+                margin-top: 27px;
+            }
+        }
+    }
+    .header-dropdown {
+        padding: 10px 50px;
+        font-size: 18px;
+        position: absolute;
+        right: 1px;
+        background: white;
+        color: lightBlack !important;
+        border-radius: 10px;
+        z-index: 999;
+        border: 1px solid #e0eaef;
+        .drop-down-caret {
+            top: -32px;
+            position: absolute;
+            font-size: 45px;
+            right: 32px;
+            color: #ccd3d6;
+        }
+        .dropdown-tab {
+            padding: 10px 0px;
+        }
+        .signin-container {
+            font-weight: 500;
+        }
+    }
+}
+
+
+.example-container {
+//height: 638px;
+  width: 100%;
+
+ border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.example-sidenav-content {
+    
+  display: flex;
+  height: 100%;
+ 
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+background-color: #F1F1F1;
+  padding: 20px;
+ width: 395px;
+}
+.closebutton{
+    padding: 5px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    float: right;
+    border: none;
+    color: #999;
+    margin-top: 3px;
+}
+.closebutton:hover{
+    background: blue;
+    color: #fff;
+    
+}
+$bg: #000;
+$fg: white;
+$borderWidth: 1px;
+
+body {
+  background: $bg;
+  font-family: roboto;
+}
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+ 
+}
+
+label {
+  color: lighten($bg,70%);
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 12px 35px;
+  margin: 0px;
+   border-radius: 30px;
+   border: none;
+}
+
+input[type=radio]:checked + label{
+  // color: #fff;
+  background: $fg;
+  
+}
+
+label + input[type=radio] + label {
+  margin: 0px;
+}
+.radio-group {
+ margin-left: 152px;
+ margin-top: 20px;
+  border: solid $borderWidth $fg;
+  display: inline-block;
+  
+  border-radius: 10px;
+  overflow: hidden;
+  color:#000;
+   border-radius: 30px;
+}
+
+div.radio-group{
+    margin-left: 48px;
+}
+
+.navitem{
+    width:100%;
+    height:85px;
+    background: #2FA1DA;
+   
+    
+}

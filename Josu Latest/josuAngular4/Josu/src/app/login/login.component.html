@@ -1,0 +1,27 @@
+
+<h2 class="font">Welcome Back!</h2>
+<p class="font">Please login to your account to access the full version</p>
+<div [formGroup]="UserDetailsForm" >
+  <div>
+<md-input-container class="style1">
+  <input mdInput placeholder="Username or Email*" formControlName="username" [(ngModel)]="model.userName" >
+  
+</md-input-container>
+ 
+  </div>
+  <div >
+<md-input-container class="style1">
+  <input mdInput type="password" placeholder="password*" formControlName="password" [(ngModel)]="model.password" >
+ 
+</md-input-container>
+
+</div>
+  <button type="button" [disabled]="!UserDetailsForm.valid" (click)="Login()" class="btn btn-info">SIGN IN</button>
+ 
+</div>
+
+<p class="style2"> <a href="" [routerLink]="['Forgotpassword']">Forgot your password? Get help signing in.</a></p>
+<div class="status" *ngIf="isActive">{{status}}</div>
+<div >
+<img class="image" src="../../assets/images/josuSignIn.png">
+</div>

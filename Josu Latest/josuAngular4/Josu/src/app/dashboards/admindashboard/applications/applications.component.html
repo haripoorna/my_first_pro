@@ -1,0 +1,101 @@
+<md-sidenav-container class=" ">
+<div class="dashboard-table-container" >
+    <div class="">
+        <div class="col-xs-12 table-container" >
+            <div class="form-group">
+                <input class="form-control input-lg" [(ngModel)]="term" type="text"
+                placeholder="Need some help search here?" ng-model="search">
+                <span (click)="share.open()" class="share-icon fa fa-share-alt css" ></span>
+            </div>
+           
+           
+            <div class="col-sm-4 application-container "  *ngFor="let item of jobList |filter:term" (click)="item.selected =!item.selected;jobselected()">
+                <div class="application-content-container pointer" [ngClass]="{'application-select':item.selected}">
+                    <div class="application-content" >
+                        <div class="application-title-container">
+                            <div class="application-title">Job Title</div>
+                            <div class="application-value-title"  >{{item.jobTitle}}</div>
+                            <div class="skill-values" >Skills
+                               
+                                <div class="application-value" *ngFor="let skill of item.skills" >{{skill}}
+                                    
+
+                                </div>
+
+                                <!--<i class="fa fa-info-circle" (click)="selectedJob=item;sidenavright.open()" style="float:right;"></i>-->
+
+                            </div>
+                        </div>
+                    </div>
+                   
+                  <i class="fa fa-info-circle" (click)="selectedJob=item;sidenavright.open()" style="float:right;margin-top: 14%;"></i>
+
+                </div>
+                   
+            </div>
+
+
+            
+        </div>
+      
+    </div>
+</div>
+  </md-sidenav-container>
+
+
+  <md-sidenav align="end" #sidenavright  class="example-sidenav" style="position:fixed;top:0;right:0;">
+    <button md-button class="closebutton" (click)="sidenavright.close()">&times;</button>
+  <h3 class="job"> Job Description </h3>
+  <h2 class="account">Please find the account information of the selected Job.
+  </h2>
+  <p class="jobtitle">Job Title</p>
+  <div class="selectedjob" >{{selectedJob.jobTitle}}</div>
+  <p class="jobtitle">Job Desc</p>
+  <div class="selectedjob">{{selectedJob.jobDesc}}</div>
+  <!--<h1>Skills</h1>
+  <div>{{selectedJob.skills[0]}}</div>-->
+   <p class="jobtitle">Skills</p>
+  <div class="selectedjob" *ngFor="let skill of selectedJob.skills" >{{skill}}
+     </div>
+  <!--<i class="fa fa-info-circle" (click)="selectedJob=item;sidenavright.open()" style="float:right;"></i>-->
+
+  </md-sidenav>  
+  <md-sidenav align="end" #share  class="example-sidenav" style="position:fixed;top:0;right:0;">
+    <button md-button class="closebutton" (click)="share.close()">&times;</button>
+  <div class="college-select-container" >
+    <span class="share-title">Select Colleges</span>
+    <!--<span class="close-button close-share-options fa fa-times pull-right" data-ng-click="closeShareOptions()"></span>-->
+    <div class="text-center share-header">
+        <span>Create your account in easy steps with less informaction.</span>
+    </div>
+    <input class="form-control share-search input-lg" type="text" placeholder="Need some help search here?" ng-model="college"/>
+    <div class="colleges-container text-center">
+        <div class="pointer college-content" *ngFor="let item of collegeList" (click)="item.selected =!item.selected">
+            <span [ngClass]="{'checked':item.selected}" class="fa fa-check-circle-o college-checkbox" ></span>
+            <!--<span class="fa fa-check-circle college-checkbox checked" ></span>-->
+            <span >{{item.collegeName}}</span>
+        </div>
+    </div>
+    <div class="text-center submit-button-container">
+        <div class="button-container disabled text-center active-submit">Submit</div>
+    </div>
+    <!--<div clsss="alert-danger text-center" data-ng-if="errorWhenPushed">Failed to push the data</div>-->
+</div>
+<!--<div class="college-select-container" data-ng-if="infoSelected">
+    <span class="share-title">Job Description</span>
+    <span class="close-button close-share-options fa fa-times pull-right" data-ng-click="closeShareOptions()"></span>
+    <div class="text-center share-header">
+        <span>Please find the account information of the selected Job.</span>
+    </div>
+    <div class="job-description-container">
+        <div class="job-description-content" data-ng-repeat="(eachTitle, eachData) in currentApplication track by $index" data-ng-if="eachTitle.indexOf('Selected') === -1 && eachTitle.indexOf('Id') === -1">
+            <div class="job-description-title" data-ng-bind="eachTitle | rename"></div>
+            <div class="job-description-data" data-ng-if="eachTitle!=='skills'" data-ng-bind="eachData"></div>
+            <div class="job-description-data" data-ng-if="eachTitle==='skills'" data-ng-repeat="eachValue in eachData track by $index" data-ng-bind="eachValue"></div>
+        </div>
+    </div>
+</div>-->
+
+  </md-sidenav>  
+ 
+

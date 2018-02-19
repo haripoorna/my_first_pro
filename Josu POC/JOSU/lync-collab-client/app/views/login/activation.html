@@ -1,0 +1,29 @@
+<div data-ng-include="'views/beforeLogin/header/header.html'"></div>
+<div class="full-page activation-page">
+    <div class="activation-content-container parent-container">
+        <div class="activation-content child-container">
+            <div class="modal-title row text-center" data-ng-bind="activationTitle"></div>
+            <div class="col-xs-5 image-container text-center">
+                <img src="{{passwordBanner}}" alt="Password Banner" class="image-binder" />
+            </div>
+            <div class="form-container col-xs-7">
+                <form name="formValidator" class="form-validator" novalidate autocomplete="off" ng-submit="formValidator.$valid">
+                    <div class="form-group form-validator-group">
+                        <div class="form-field-container">
+                            <md-input-container class="material-input-container" data-ng-repeat="(formKey, formField) in formBuildInfo">
+                                <label class="control-label" data-ng-bind="formField.title"></label>
+                                <input type="{{formField.type}}" data-ng-model="formField.formModel" class="form-control" data-ng-required="formField.required" data-ng-pattern="formField.pattern" ng-maxlength="formField.maxLength">
+                            </md-input-container>
+                        </div>
+                        <div class="button-container inactive-button-container pull-right" data-ng-if="!formValidator.$valid">
+                            <div class="text-binder" data-ng-bind="signIn"></div>
+                        </div>
+                        <div class="button-container pull-right" data-ng-if="formValidator.$valid">
+                            <div class="text-binder" data-ng-bind="signIn" data-ng-click="activationSignIn(!formValidator.$valid)"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<form #f="ngForm" novalidate>
+
+    <div class="radio-group">
+        <input type="radio" id="option-one" [routerLink]="['Login']" name="selector" checked><label for="option-one">LOGIN</label>
+        <input type="radio" id="option-two" [routerLink]="['Register']" name="selector"><label for="option-two">SIGNUP</label>
+
+    </div>
+
+
+    <div>
+        <router-outlet></router-outlet>
+    </div>

@@ -1,0 +1,12 @@
+<table class="table table-hover table-responsive">
+    <thead>
+        <th data-ng-repeat="column in objectKeys track by $index" data-ng-bind="column"></th>
+    </thead>
+    <tbody>
+        <tr data-ng-repeat="tuple in tableData track by $index">
+            <td data-ng-repeat="column in tuple" data-ng-if='column.isPrimary'>
+            	<div data-ng-repeat="key in objectKeys">{{column[key]}}</div>
+            </td>
+        </tr>
+    </tbody>
+</table>

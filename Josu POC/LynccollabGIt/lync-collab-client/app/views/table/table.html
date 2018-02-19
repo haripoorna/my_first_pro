@@ -1,0 +1,11 @@
+<div class="table-responsive table-container">
+<table class="table table-content">
+	<tr>
+		<th  data-ng-repeat="eachkey in objectKeys">{{eachkey}}</th>
+	</tr>
+
+    <tr data-ng-repeat="tuple in tableData track by $index">
+    	<td data-ng-repeat="column in objectKeys">{{tuple[column]}}</td>
+    </tr>
+</table>
+</div>
